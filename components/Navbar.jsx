@@ -5,7 +5,7 @@ import Image from "next/image";
 function Navbar() {
   const ishidden = true;
   return (
-    <div className=" sticky flex items-center justify-between p-2  shadow-md">
+    <div className="sticky top-0 z-50 flex items-center justify-between p-2  shadow-md bg-white">
       <div className="flex items-center space-x-1">
         <Image src={Logo} width={40} height={40} />
         <h1 className="font-bold">UPI Gateway</h1>
