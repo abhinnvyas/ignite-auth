@@ -23,7 +23,7 @@ function Card({ heading, paragraph, linkHref, imageHref }) {
             className={`font-bold  text-base focus:outline-none`}
             href={linkHref}
           >
-            Integrate Now {">"}
+            Integrate Now
           </a>
         </div>
       </div>
