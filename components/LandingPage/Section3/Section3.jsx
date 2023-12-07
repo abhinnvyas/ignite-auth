@@ -21,7 +21,7 @@ function Section3() {
           Unlock the potential of UPIGateway's Dynamic QR in different scenarios
         </h1>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-y-10 gap-x-10  mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-y-10 gap-x-10  mt-10 lg:mt-20">
         <Card
           heading="Accepts payments via websites"
           paragraph="Make payment acceptance a breeze by integrating dynamic QR codes into your website, e-commerce platform, and mobile apps."

@@ -22,7 +22,7 @@ function Section2() {
             How does UPIGateway Dynamic QR work?
           </h1>
         </div>
-        <div className="flex flex-col lg:flex-row justify-center lg:items-center space-y-5 lg:space-x-10 mt-10">
+        <div className="flex flex-col lg:flex-row justify-center lg:items-center space-y-5 lg:space-x-10 mt-10 lg:mt-20">
           <div className="border flex flex-grow  mt-10 p-3">
             <h1>Add your Image here</h1>
             <Image

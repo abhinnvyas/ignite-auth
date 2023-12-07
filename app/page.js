@@ -10,6 +10,7 @@ import {
   textSecondary,
   foreground,
 } from "@/color.js";
+import Section4 from "@/components/LandingPage/Section4/Section4";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Section1 />
         <Section2 />
         <Section3 />
+        <Section4 />
       </div>
     </div>
   );
