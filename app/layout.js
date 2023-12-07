@@ -1,5 +1,12 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import {
+  textPrimary,
+  background,
+  textLight,
+  textSecondary,
+  foreground,
+} from "@/color.js";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` bg-white text-black 
+        className={` ${background} ${textPrimary} 
        ${inter.className}`}
       >
         {children}
