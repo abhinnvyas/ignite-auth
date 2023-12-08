@@ -12,7 +12,7 @@ import Image from "next/image";
 function Section7() {
   return (
     <footer
-      className={`${textLight} transition-all duration-500 ease-in-out transform bg-gray-100`}
+      className={`${textLight} p-4 transition-all duration-500 ease-in-out transform bg-gray-100`}
     >
       <div className="max-w-screen-xl flex flex-col flex-wrap mx-auto items-start md:flex-row md:flex-no-wrap py-5 px-4 sm:px-8 md:px-4 xl:px-0 md:grid gap-8 md:grid-cols-3">
         <div className="flex flex-col mx-auto md:mx-0 text-left col-span-1">
