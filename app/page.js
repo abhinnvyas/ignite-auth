@@ -11,6 +11,9 @@ import {
   foreground,
 } from "@/color.js";
 import Section4 from "@/components/LandingPage/Section4/Section4";
+import Section5 from "@/components/LandingPage/Section5/Section5";
+import Section6 from "@/components/LandingPage/Section6";
+import Section7 from "@/components/LandingPage/Section7";
 
 export default function Home() {
   return (
@@ -22,6 +25,9 @@ export default function Home() {
         <Section2 />
         <Section3 />
         <Section4 />
+        <Section5 />
+        <Section6 />
+        <Section7 />
       </div>
     </div>
   );

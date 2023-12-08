@@ -15,7 +15,7 @@ import Section44 from "@/public/section4(4).png";
 function Section4() {
   return (
     <div>
-      <div className="max-w-screen-lg mx-auto px-4 sm:px-8 md:px-4 xl:px-0 mt-10 lg:mt-20">
+      <div className="max-w-screen-lg mx-auto px-4 sm:px-8 md:px-4 xl:px-0 mt-10 lg:mt-20 ">
         <div className="flex flex-col items-center">
           <h1 className={`mb-3 font-bold text-left text-base ${textSecondary}`}>
             UPIGateway{"'"}s Features

@@ -11,7 +11,7 @@ import {
 function Section1() {
   return (
     <div>
-      <div className="max-w-screen-xl flex items-center mx-auto flex-col lg:flex-row pt-4 pb-20 px-4 sm:px-8 md:px-4 xl:px-0">
+      <div className="max-w-screen-xl flex items-center mx-auto flex-col lg:flex-row pt-4 pb-20 px-4 sm:px-8 md:px-4 xl:px-0 h-screen">
         <div className="flex flex-col justify-center text-left space-y-3 lg:max-w-md">
           <div className={`${textPrimary}`}>
             <h1 className="text-3xl lg:text-4xl leading-normal lg:leading-normal font-semibold">
