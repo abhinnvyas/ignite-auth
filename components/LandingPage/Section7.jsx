@@ -102,8 +102,8 @@ function Section7() {
         </div>
       </div>
       <div className="w-full rounded-b-lg bg-gray-200">
-        <div className="max-w-screen-xl flex flex-col flex-wrap mx-auto items-start md:flex-row md:flex-no-wrap py-5 px-4 sm:px-8 md:px-4 xl:px-0">
-          <p className="text-sm text-start text-black sm:text-left">
+        <div className="max-w-screen-xl flex flex-col flex-wrap mx-auto items-start md:flex-row md:flex-no-wrap py-5 px-4 sm:px-8 md:px-4 lg:px-5">
+          <p className="text-sm text-start  text-black sm:text-left">
             © UPIGateway 2020-23, All Rights Reserved.
           </p>
         </div>
