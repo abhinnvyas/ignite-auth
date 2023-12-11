@@ -9,7 +9,14 @@ import {
 import { redirect, usePathname } from "next/navigation";
 import Link from "next/link";
 
-function MenuItem({ ActiveTab, CurrentTab, Icon, Text, RedirectLink }) {
+function MenuItem({
+  isCollapsed,
+  ActiveTab,
+  CurrentTab,
+  Icon,
+  Text,
+  RedirectLink,
+}) {
   return (
     <Link href={RedirectLink}>
       <div
@@ -20,7 +27,9 @@ function MenuItem({ ActiveTab, CurrentTab, Icon, Text, RedirectLink }) {
         }  px-4 items-center justify-left cursor-pointer space-x-4  p-2 rounded-lg transition-all ease-in-out`}
       >
         <Icon class={`h-6 w-6 `} />
-        <h1 className="text-sm">{Text}</h1>
+        <h1 className={`text-sm ${isCollapsed ? "hidden" : "block"}`}>
+          {Text}
+        </h1>
       </div>
     </Link>
   );

@@ -32,8 +32,8 @@ function page() {
           <div className="p-2">
             <h1 className="text-md font-semibold ">Recent Activity</h1>
           </div>
-          <div class="p-6 overflow-auto px-0">
-            <table class="w-full table-auto text-left">
+          <div class="p-6 px-0 overflow-auto">
+            <table class="table-auto min-w-fit text-left ">
               <thead className="">
                 <tr>
                   <th class="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
