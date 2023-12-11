@@ -25,7 +25,7 @@ function Sidebar({ Active }) {
       className={`${textPrimary} ${background} shadow-2xl p-2 sticky left-0 max-w-xs h-screen`}
     >
       <div className="">
-        <div className="flex items-center space-x-2 text-xl   px-4  w-full py-2">
+        <div className="flex items-center space-x-2 text-lg   px-4  w-full py-2">
           <Image
             className="rounded-lg"
             src={Logo}
