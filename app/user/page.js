@@ -17,7 +17,7 @@ function page() {
       </div>
       <main>
         <div className={`${textPrimary} p-4  mt-5 `}>
-          <h1 className="text-md md:text-2xl lg:text-4xl font-semibold">
+          <h1 className="text-lg md:text-2xl lg:text-4xl font-semibold">
             Welcome,
             <span className={`${textSecondary} font-bold`}> User</span>
           </h1>
