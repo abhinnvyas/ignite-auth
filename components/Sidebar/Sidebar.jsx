@@ -19,7 +19,7 @@ import {
 import MenuItem from "./MenuItem";
 
 function Sidebar({ Active }) {
-  const [isCollapsed, setIsCollapsed] = useState(true);
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
   return (
     <div

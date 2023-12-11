@@ -11,11 +11,11 @@ import {
 
 function page() {
   return (
-    <div className="flex space-x-4 ">
+    <div className="flex space-x-4 w-full">
       <div>
         <Sidebar Active={"dashboard"} />
       </div>
-      <main>
+      <main className="w-full ">
         <div className={`${textPrimary} p-4  mt-5 `}>
           <h1 className="text-lg md:text-2xl lg:text-4xl font-semibold">
             Welcome,
@@ -28,12 +28,12 @@ function page() {
           </h1>
         </div>
 
-        <div class="flex flex-col border-2 rounded-lg  justify-left p-2 bg-white">
+        <div class="flex flex-col border-2 rounded-lg max-w-4xl justify-left p-2 bg-white">
           <div className="p-2">
-            <h1 className="text-md font-semibold ">Recent Activity</h1>
+            <h1 className="text-md font-semibold mb-2">Recent Activity</h1>
           </div>
-          <div class="p-6 px-0 overflow-auto">
-            <table class="table-auto min-w-fit text-left ">
+          <div class=" px-0 overflow-auto w-full">
+            <table class="table-auto w-full text-left ">
               <thead className="">
                 <tr>
                   <th class="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
