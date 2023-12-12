@@ -15,7 +15,7 @@ function page() {
       <div>
         <Sidebar Active={"dashboard"} />
       </div>
-      <main className="w-full ">
+      <main className="">
         <div className={`${textPrimary} p-4  mt-5 `}>
           <h1 className="text-lg md:text-2xl lg:text-4xl font-semibold">
             Welcome,
@@ -29,9 +29,13 @@ function page() {
         </div>
 
         <div class="flex flex-col border-2 rounded-lg max-w-4xl justify-left p-2 bg-white">
-          <div className="p-2">
+          <div className="p-2 flex justify-between">
             <h1 className="text-md font-semibold mb-2">Recent Activity</h1>
+            <h1 className="hover:underline cursor-pointer transition-all ease-in-out">
+              See all transactions
+            </h1>
           </div>
+          <div></div>
           <div class=" px-0 overflow-auto w-full">
             <table class="table-auto w-full text-left ">
               <thead className="">
