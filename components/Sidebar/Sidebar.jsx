@@ -23,7 +23,7 @@ function Sidebar({ Active }) {
 
   return (
     <div
-      className={`${textPrimary} ${background} shadow-2xl p-2 sticky left-0 max-w-xs h-screen transition-all ease-in-out`}
+      className={`${textPrimary} ${background} shadow-2xl p-2 sticky left-0  max-w-xs h-screen transition-all ease-in-out`}
     >
       <div
         className={`flex items-center ${isCollapsed ? "" : "space-x-4 p-2"}`}

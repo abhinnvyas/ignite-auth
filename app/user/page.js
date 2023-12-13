@@ -1,5 +1,7 @@
+"use client";
 import Sidebar from "@/components/Sidebar/Sidebar";
-import React from "react";
+import React, { useEffect } from "react";
+import { Chart } from "chart.js";
 import {
   textPrimary,
   background,
@@ -8,11 +10,12 @@ import {
   foreground,
   textExtraLight,
 } from "@/color.js";
+import BarChart from "@/components/Dashboard/BarChart";
 
 function page() {
   return (
     <div className="flex space-x-4 w-full">
-      <div>
+      <div className="">
         <Sidebar Active={"dashboard"} />
       </div>
       <main className="">
@@ -28,7 +31,64 @@ function page() {
           </h1>
         </div>
 
-        <div class="flex flex-col border-2 rounded-lg max-w-4xl justify-left p-2 bg-white">
+        {/* Bar Graphs */}
+        <div className="flex flex-col lg:flex-row lg:space-x-2 lg:space-y-0 space-y-2 mb-10 mt-4">
+          <div className="border-2 p-4 rounded-lg flex-1">
+            <h1 className="border-b-2">Last 10 Days Statistics</h1>
+          </div>
+          <div className="border-2 p-4 rounded-lg">
+            <h1 className="border-b-2">QR Transactions Statistics</h1>
+          </div>
+        </div>
+
+        {/* Top Cards  */}
+        <div className="flex flex-col lg:flex-row lg:space-x-2 lg:space-y-0 space-y-2 mb-10 mt-4 ">
+          {/* Card1 */}
+          <div className="flex items-center space-x-4 p-4 border-2 rounded-lg justify-start lg:justify-center">
+            <div
+              className={`w-12 h-12 rounded-full ${
+                foreground ? "bg-green-700" : ""
+              } `}
+            ></div>
+            <div className="flex flex-col justify-start ">
+              <h1 className={`${textPrimary}`}>₹ 0</h1>
+              <p className={`${textExtraLight ? textExtraLight : ""}`}>
+                Today Receive Amount
+              </p>
+            </div>
+          </div>
+          {/* Card2 */}
+          <div className="flex items-center space-x-4 p-4 border-2 rounded-lg justify-start lg:justify-center">
+            <div
+              className={`w-12 h-12 rounded-full ${
+                foreground ? "bg-green-700" : ""
+              } `}
+            ></div>
+            <div className="flex flex-col justify-start ">
+              <h1 className={`${textPrimary}`}>0</h1>
+              <p className={`${textExtraLight ? textExtraLight : ""}`}>
+                Today Success Transaction
+              </p>
+            </div>
+          </div>
+          {/* Card3 */}
+          <div className="flex items-center space-x-4 p-4 border-2 rounded-lg justify-start lg:justify-center">
+            <div
+              className={`w-12 h-12 rounded-full ${
+                foreground ? "bg-green-700" : ""
+              } `}
+            ></div>
+            <div className="flex flex-col justify-start ">
+              <h1 className={`${textPrimary}`}>0</h1>
+              <p className={`${textExtraLight ? textExtraLight : ""}`}>
+                Today Pending Transaction
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Table */}
+        <div className="flex flex-col border-2 rounded-lg  justify-left p-2 bg-white">
           <div className="p-2 flex justify-between">
             <h1 className="text-md font-semibold mb-2">Recent Activity</h1>
             <h1 className="hover:underline cursor-pointer transition-all ease-in-out">

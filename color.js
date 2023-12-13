@@ -5,4 +5,11 @@ const background = "bg-white";
 const foreground = "bg-green-700";
 const textExtraLight = "text-gray-300";
 
-export { textPrimary, background, textLight, textSecondary, foreground };
+export {
+  textPrimary,
+  background,
+  textLight,
+  textSecondary,
+  foreground,
+  textExtraLight,
+};
