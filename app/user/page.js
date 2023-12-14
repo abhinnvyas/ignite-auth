@@ -1,7 +1,4 @@
-"use client";
 import Sidebar from "@/components/Sidebar/Sidebar";
-import React, { useEffect } from "react";
-import { Chart } from "chart.js";
 import {
   textPrimary,
   background,
@@ -10,15 +7,13 @@ import {
   foreground,
   textExtraLight,
 } from "@/color.js";
-import BarChart from "@/components/Dashboard/BarChart";
+import Cookies from "js-cookie";
 
 function page() {
   return (
     <div className="flex space-x-4 w-full">
-      <div className="">
-        <Sidebar Active={"dashboard"} />
-      </div>
-      <main className="">
+      <Sidebar Active={"dashboard"} />
+      <main className="w-full px-4">
         <div className={`${textPrimary} p-4  mt-5 `}>
           <h1 className="text-lg md:text-2xl lg:text-4xl font-semibold">
             Welcome,
@@ -96,37 +91,37 @@ function page() {
             </h1>
           </div>
           <div></div>
-          <div class=" px-0 overflow-auto w-full">
-            <table class="table-auto w-full text-left ">
+          <div className=" px-0 overflow-auto w-full">
+            <table className="table-auto w-full text-left ">
               <thead className="">
                 <tr>
-                  <th class="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
-                    <p class="block antialiased font-sans text-md text- font-normal leading-none opacity-70">
+                  <th className="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
+                    <p className="block antialiased font-sans text-md text- font-normal leading-none opacity-70">
                       #
                     </p>
                   </th>
-                  <th class="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
-                    <p class="block antialiased font-sans text-md text-blue-gray-900 font-normal leading-none opacity-70">
+                  <th className="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
+                    <p className="block antialiased font-sans text-md text-blue-gray-900 font-normal leading-none opacity-70">
                       Customer Name
                     </p>
                   </th>
-                  <th class="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
-                    <p class="block antialiased font-sans text-md text-blue-gray-900 font-normal leading-none opacity-70">
+                  <th className="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
+                    <p className="block antialiased font-sans text-md text-blue-gray-900 font-normal leading-none opacity-70">
                       Client Txn ID
                     </p>
                   </th>
-                  <th class="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
-                    <p class="block antialiased font-sans text-md text-blue-gray-900 font-normal leading-none opacity-70">
+                  <th className="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
+                    <p className="block antialiased font-sans text-md text-blue-gray-900 font-normal leading-none opacity-70">
                       Amount
                     </p>
                   </th>
-                  <th class="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
-                    <p class="block antialiased font-sans text-md text-blue-gray-900 font-normal leading-none opacity-70">
+                  <th className="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
+                    <p className="block antialiased font-sans text-md text-blue-gray-900 font-normal leading-none opacity-70">
                       Status
                     </p>
                   </th>
-                  <th class="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
-                    <p class="block antialiased font-sans text-md text-blue-gray-900 font-normal leading-none opacity-70">
+                  <th className="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
+                    <p className="block antialiased font-sans text-md text-blue-gray-900 font-normal leading-none opacity-70">
                       Date
                     </p>
                   </th>
@@ -134,46 +129,46 @@ function page() {
               </thead>
               <tbody>
                 <tr>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="flex items-center gap-3">
+                  <td className="p-4 border-b border-blue-gray-50">
+                    <div className="flex items-center gap-3">
                       <p
-                        class={`block antialiased font-sans text-md leading-normal ${textSecondary} `}
+                        className={`block antialiased font-sans text-md leading-normal ${textSecondary} `}
                       >
                         1
                       </p>
                     </div>
                   </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="flex items-center gap-3">
-                      <p class="block antialiased font-sans text-md leading-normal text-blue-gray-900 ">
+                  <td className="p-4 border-b border-blue-gray-50">
+                    <div className="flex items-center gap-3">
+                      <p className="block antialiased font-sans text-md leading-normal text-blue-gray-900 ">
                         Test Name
                       </p>
                     </div>
                   </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="flex items-center gap-3">
-                      <p class="block antialiased font-sans text-md leading-normal text-blue-gray-900 ">
+                  <td className="p-4 border-b border-blue-gray-50">
+                    <div className="flex items-center gap-3">
+                      <p className="block antialiased font-sans text-md leading-normal text-blue-gray-900 ">
                         000111
                       </p>
                     </div>
                   </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="flex items-center gap-3">
-                      <p class="block antialiased font-sans text-md leading-normal text-blue-gray-900 ">
+                  <td className="p-4 border-b border-blue-gray-50">
+                    <div className="flex items-center gap-3">
+                      <p className="block antialiased font-sans text-md leading-normal text-blue-gray-900 ">
                         500$
                       </p>
                     </div>
                   </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="flex items-center gap-3">
-                      <p class="block antialiased font-sans text-md leading-normal text-blue-gray-900  bg-yellow-400 text-white p-2 rounded-lg">
+                  <td className="p-4 border-b border-blue-gray-50">
+                    <div className="flex items-center gap-3">
+                      <p className="block antialiased font-sans text-md leading-normal text-blue-gray-900  bg-yellow-400 text-white p-2 rounded-lg">
                         Created
                       </p>
                     </div>
                   </td>
-                  <td class="p-4 border-b border-blue-gray-50">
-                    <div class="flex items-center gap-3">
-                      <p class="block antialiased font-sans text-md leading-normal text-blue-gray-900  ">
+                  <td className="p-4 border-b border-blue-gray-50">
+                    <div className="flex items-center gap-3">
+                      <p className="block antialiased font-sans text-md leading-normal text-blue-gray-900  ">
                         29-11-2023 12:29 PM
                       </p>
                     </div>

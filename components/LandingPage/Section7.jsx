@@ -65,7 +65,7 @@ function Section7() {
                   <form className="w-100" action="POST">
                     <div className="flex flex-col">
                       <input
-                        class="py-2 px-2 rounded border border-gray-300 placeholder-gray-400 focus:ring-1 focus:ring-primary_dark focus:border-primary_dark"
+                        className="py-2 px-2 rounded border border-gray-300 placeholder-gray-400 focus:ring-1 focus:ring-primary_dark focus:border-primary_dark"
                         id="email"
                         name="email"
                         type="email"
@@ -75,7 +75,7 @@ function Section7() {
                         data-parsley-type-message="Please enter a valid email address"
                       />
                       <button
-                        class={`mt-4 px-8 py-2  border ${foreground} text-white font-medium rounded modal-open`}
+                        className={`mt-4 px-8 py-2  border ${foreground} text-white font-medium rounded modal-open`}
                         type="submit"
                         data-toggle="modal"
                         data-target="prepaidPlan"
