@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import {
@@ -7,6 +8,8 @@ import {
   textSecondary,
   foreground,
 } from "@/color.js";
+import Lottie from "lottie-react";
+import animationData from "@/public/Lottie Files/2.json";
 
 function Section2() {
   return (
@@ -23,16 +26,13 @@ function Section2() {
           </h1>
         </div>
         <div className="flex flex-col lg:flex-row justify-center lg:items-center space-y-5 lg:space-x-10 mt-10 ">
-          <div className="border flex flex-grow  mt-10 p-3">
-            <h1>Add your Image here</h1>
-            <Image
-              className=""
-              src=""
+          <div className=" flex flex-grow h-full ">
+            <Lottie
+              color="#2F855A"
               width={100}
               height={100}
-              objectFit="cover"
-              alt="Add your Image here"
-            ></Image>
+              animationData={animationData}
+            />
           </div>
           <div className="flex flex-col justify-start space-y-4 ">
             <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-4 lg:space-x-10 ">

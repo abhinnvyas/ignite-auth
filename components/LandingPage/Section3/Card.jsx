@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import {
@@ -7,8 +8,9 @@ import {
   textSecondary,
   foreground,
 } from "@/color.js";
+import Lottie from "lottie-react";
 
-function Card({ heading, paragraph, linkHref, imageHref }) {
+function Card({ heading, paragraph, linkHref, imageData }) {
   return (
     <div
       className={`relative flex ${background} flex-col lg:flex-row p-4 lg:p-7 rounded-xl border overflow-hidden items-center col-span-1 lg:col-span-2 ${textPrimary}`}
@@ -27,15 +29,13 @@ function Card({ heading, paragraph, linkHref, imageHref }) {
           </a>
         </div>
       </div>
-      <div className=" border flex  p-3  overflow-hidden rounded-lg  lg:mb-0 lg:absolute w-52 lg:-right-6">
-        <h1>Add your Image here</h1>
-        <Image
-          className=""
-          src={imageHref}
+      <div className=" flex  p-3  overflow-hidden rounded-lg  lg:mb-0 lg:absolute w-52 lg:-right-6">
+        <Lottie
+          color="#2F855A"
           width={100}
           height={100}
-          alt="Add your Image here"
-        ></Image>
+          animationData={imageData}
+        />
       </div>
     </div>
   );

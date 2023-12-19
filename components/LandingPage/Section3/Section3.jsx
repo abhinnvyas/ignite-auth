@@ -7,6 +7,7 @@ import {
   textSecondary,
   foreground,
 } from "@/color.js";
+import animationData1 from "@/public/Lottie Files/3(1).json";
 
 function Section3() {
   return (
@@ -26,7 +27,7 @@ function Section3() {
           heading="Accepts payments via websites"
           paragraph="Make payment acceptance a breeze by integrating dynamic QR codes into your website, e-commerce platform, and mobile apps."
           linkHref=""
-          imageHref=""
+          imageData={animationData1}
         />
         <Card
           heading="Accepts payments via OTT & Smart TV Apps"
