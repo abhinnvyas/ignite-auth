@@ -18,45 +18,55 @@ function Form() {
   const [VerficationID, setVerficationID] = useState("");
   const [Flag, setFlag] = useState(false);
   const [IsSignUpFlag, setIsSignUpFlag] = useState(false);
+  const [IsLoading, setIsLoading] = useState(false);
   const router = useRouter();
 
   const handleSubmitSendOTP = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
     sendOTP(PhoneNumber)
       .then((res) => {
         setVerficationID(res.verificationId);
         setFlag(true);
+        setIsLoading(false);
       })
       .catch((err) => {
         sendOTPSignUp(PhoneNumber).then((res) => {
           setVerficationID(res.verificationId);
           setIsSignUpFlag(true);
           setFlag(true);
+          setIsLoading(false);
         });
       });
   };
 
   const handleSubmitVerifyOTP = async (e) => {
     e.preventDefault();
+    console.log(IsSignUpFlag);
+    setIsLoading(true);
     !IsSignUpFlag
       ? verifyOTP(PhoneNumber, OTP, VerficationID)
           .then((res) => {
+            console.log(res);
             Cookies.set("ClientId", res.ClientId, { expires: 7, secure: true });
             Cookies.set("token", res.token, { expires: 7, secure: true });
-
             router.push("/user");
+            setIsLoading(false);
           })
           .catch((err) => {
+            alert("OTP has Expired!");
             console.log(err);
           })
       : verifyOTPSignUp(PhoneNumber, OTP, VerficationID)
           .then((res) => {
+            console.log(res);
             Cookies.set("ClientId", res.ClientId, { expires: 7, secure: true });
             Cookies.set("token", res.token, { expires: 7, secure: true });
-
             router.push("/user");
+            setIsLoading(false);
           })
           .catch((err) => {
+            alert("OTP has Expired!");
             console.log(err);
           });
   };
@@ -84,7 +94,7 @@ function Form() {
           </div>
           <input
             className={`w-full p-2 mt-4 bg-my_secondary  rounded-lg text-white hover:cursor-pointer shadow-md hover:shadow-lg transition-all ease-in-out active:scale-95`}
-            value={"Verify OTP"}
+            value={IsLoading ? "Loading" : "Verify OTP"}
             type="submit"
           />
         </form>
@@ -104,7 +114,7 @@ function Form() {
           </div>
           <input
             className={`w-full p-2 mt-4 bg-my_secondary  rounded-lg text-white hover:cursor-pointer shadow-md hover:shadow-lg transition-all ease-in-out active:scale-95`}
-            value={"Send OTP"}
+            value={IsLoading ? "Loading" : "Verify OTP"}
             type="submit"
           />
         </form>

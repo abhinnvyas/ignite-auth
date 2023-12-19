@@ -1,77 +1,39 @@
+"use client";
 import React from "react";
-import {
-  Chart,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend,
-  Filler,
-  BarElement,
-} from "chart.js";
-import { Bar } from "react-chartjs-2";
-
-Chart.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend,
-  Filler,
-  BarElement
-);
+import Chart from "react-apexcharts";
 
 function BarChart() {
-  const data = {
-    labels: [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday",
-    ],
-    datasets: [
-      {
-        label: "Recieved Amount",
-        borderRadius: 30,
-        data: [1, 0, 1, 0, 1, 0, 1],
-        backgroundColor: "rgba(0,163,81,1)",
-        barThickness: 10,
-      },
-    ],
-  };
   const options = {
     chart: {
-      type: "bar",
+      id: "basic-bar",
     },
-    series: [
-      {
-        data: [
-          {
-            x: "category A",
-            y: 10,
-          },
-          {
-            x: "category B",
-            y: 18,
-          },
-          {
-            x: "category C",
-            y: 13,
-          },
-        ],
-      },
-    ],
+    xaxis: {
+      categories: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+    },
+    yaxis: {
+      max: 10, // Set the maximum value on the y-axis
+      min: 0, // Set the minimum value on the y-axis
+    },
+    colors: ["#2F855A"],
   };
+
+  const series = [
+    {
+      name: "Recieved Amount",
+      data: [1, 2, 3, 4, 5, 6, 7],
+    },
+  ];
   return (
     <div>
-      <Bar data={data} height={300} options={options} />
+      <Chart options={options} series={series} height={500} type="bar" />
     </div>
   );
 }
