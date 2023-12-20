@@ -20,13 +20,11 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      WebFontLoader.load({
-        google: {
-          families: ["Lato"],
-        },
-      });
-    }
+    WebFontLoader.load({
+      google: {
+        families: ["Lato"],
+      },
+    });
   }, []);
   return (
     <div style={{ fontFamily: "Lato" }}>
