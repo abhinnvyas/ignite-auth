@@ -8,8 +8,8 @@ import {
   foreground,
   textExtraLight,
 } from "@/color.js";
-import BarChart from "@/components/Dashboard/BarChart";
-import RadialBar from "@/components/Dashboard/RadialBar";
+// import BarChart from "@/components/Dashboard/BarChart";
+// import RadialBar from "@/components/Dashboard/RadialBar";
 import { useState } from "react";
 
 function Page() {
