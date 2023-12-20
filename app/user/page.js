@@ -17,7 +17,7 @@ function Page() {
   const [UsedTxns, setUsedTxns] = useState(50);
   return (
     <div className="flex space-x-4 w-full">
-      <Sidebar Active={"dashboard"} />
+      {/* <Sidebar Active={"dashboard"} />
       <main className="w-full px-4 h-screen overflow-y-scroll">
         <div className={`${textPrimary} p-4  mt-5 `}>
           <h1 className="text-lg md:text-2xl lg:text-4xl font-semibold">
@@ -31,16 +31,17 @@ function Page() {
           </h1>
         </div>
 
-        {/* Bar Graphs */}
         <div className="flex flex-col lg:flex-row lg:space-x-2 lg:space-y-0 space-y-2 mb-10 mt-4">
           <div className="border-2 p-4  rounded-lg flex-1">
             <h1 className="border-b-2">Last 10 Days Statistics</h1>
-            <div className="w-full">{/* <BarChart /> */}</div>
+            <div className="w-full">
+              <BarChart />
+            </div>
           </div>
           <div className="border-2 p-4 flex-1 rounded-lg ">
             <h1 className="border-b-2">QR Transactions Statistics</h1>
             <div className="w-full">
-              {/* <RadialBar UsedTxns={UsedTxns} /> */}
+              <RadialBar UsedTxns={UsedTxns} />
             </div>
             <div className="flex justify-between items-center mx-20">
               <div className="flex flex-col justify-center text-center">
@@ -65,9 +66,7 @@ function Page() {
           </div>
         </div>
 
-        {/* Top Cards  */}
         <div className="flex flex-col lg:flex-row lg:space-x-2 lg:space-y-0 space-y-2 mb-10 mt-4 w-full justify-evenly">
-          {/* Card1 */}
           <div className="flex items-center space-x-4 p-4 border-2 rounded-lg justify-start lg:justify-center">
             <div
               className={`w-12 h-12 rounded-full ${
@@ -81,7 +80,6 @@ function Page() {
               </p>
             </div>
           </div>
-          {/* Card2 */}
           <div className="flex items-center space-x-4 p-4 border-2 rounded-lg justify-start lg:justify-center">
             <div
               className={`w-12 h-12 rounded-full ${
@@ -95,7 +93,6 @@ function Page() {
               </p>
             </div>
           </div>
-          {/* Card3 */}
           <div className="flex items-center space-x-4 p-4 border-2 rounded-lg justify-start lg:justify-center">
             <div
               className={`w-12 h-12 rounded-full ${
@@ -111,7 +108,6 @@ function Page() {
           </div>
         </div>
 
-        {/* Table */}
         <div className="flex flex-col border-2 rounded-lg  justify-left p-2 bg-white">
           <div className="p-2 flex justify-between">
             <h1 className="text-md font-semibold mb-2">Recent Activity</h1>
@@ -207,7 +203,7 @@ function Page() {
             </table>
           </div>
         </div>
-      </main>
+      </main> */}
     </div>
   );
 }
