@@ -12,7 +12,7 @@ import BarChart from "@/components/Dashboard/BarChart";
 import RadialBar from "@/components/Dashboard/RadialBar";
 import { useState } from "react";
 
-function page() {
+function Page() {
   const [TotalTxns, setTotalTxns] = useState(100);
   const [UsedTxns, setUsedTxns] = useState(50);
   return (
@@ -214,4 +214,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
