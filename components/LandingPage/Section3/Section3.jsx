@@ -7,7 +7,10 @@ import {
   textSecondary,
   foreground,
 } from "@/color.js";
-import animationData1 from "@/public/Lottie Files/3(1).json";
+import animationData1 from "@/public/Lottie Files/Section3/first.json";
+import animationData2 from "@/public/Lottie Files/Section3/second.json";
+import animationData3 from "@/public/Lottie Files/Section3/third.json";
+import animationData4 from "@/public/Lottie Files/Section3/fourth.json";
 
 function Section3() {
   return (
@@ -24,28 +27,30 @@ function Section3() {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-y-10 gap-x-10  mt-10 lg:mt-20">
         <Card
-          heading="Accepts payments via websites"
-          paragraph="Make payment acceptance a breeze by integrating dynamic QR codes into your website, e-commerce platform, and mobile apps."
+          heading="E-Commerce Secure Access:"
+          paragraph="Enhances user account security, protects sensitive information, and builds trust among online shoppers."
           linkHref=""
           imageData={animationData1}
         />
         <Card
-          heading="Accepts payments via OTT & Smart TV Apps"
-          paragraph="Integrate Dynamic QR into your app and start accepting payments for premium features, subscriptions, or in-app purchases with ease."
+          heading="Financial Transaction Verification"
+          paragraph="Adds an extra layer of security to financial transactions, reducing the risk of unauthorized access or fraudulent activities.
+          "
           linkHref=""
-          imageHref=""
+          imageData={animationData2}
         />
         <Card
-          heading="Accept payments in store"
-          paragraph="Say goodbye to errors and delays at the point of sale. Display our dynamic QR code on your POS terminal and accept payments seamlessly."
+          heading="Employee Identity Verification for Enterprise Apps"
+          paragraph="Strengthens access controls, mitigates the risk of unauthorized access to corporate resources, and simplifies the login process for employees.
+          "
           linkHref=""
-          imageHref=""
+          imageData={animationData3}
         />
         <Card
-          heading="Accept payments on self serving Kiosks"
-          paragraph="Allow customers to make contactless payments at self-ordering kiosks in fast-food restaurants, vending machines in offices, airports, and parking lots with the help of UPIGateway's dynamic QR feature."
+          heading="Subscription-based Services"
+          paragraph="Reduces the risk of account sharing, protects premium content, and enhances the overall security of subscription-based platforms."
           linkHref=""
-          imageHref=""
+          imageData={animationData4}
         />
       </div>
     </div>

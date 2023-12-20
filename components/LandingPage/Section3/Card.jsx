@@ -10,7 +10,7 @@ import {
 } from "@/color.js";
 import Lottie from "lottie-react";
 
-function Card({ heading, paragraph, linkHref, imageData }) {
+function Card({ heading, paragraph, linkHref, imageData, loop = true }) {
   return (
     <div
       className={`relative flex ${background} flex-col lg:flex-row p-4 lg:p-7 rounded-xl border overflow-hidden items-center col-span-1 lg:col-span-2 ${textPrimary}`}
@@ -31,6 +31,7 @@ function Card({ heading, paragraph, linkHref, imageData }) {
       </div>
       <div className=" flex  p-3  overflow-hidden rounded-lg  lg:mb-0 lg:absolute w-52 lg:-right-6">
         <Lottie
+          loop
           color="#2F855A"
           width={100}
           height={100}

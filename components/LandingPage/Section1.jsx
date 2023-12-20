@@ -14,21 +14,21 @@ function Section1() {
       <div className="max-w-screen-xl flex items-center mx-auto flex-col lg:flex-row pt-4 pb-20 px-4 sm:px-8 md:px-4 xl:px-0 h-screen">
         <div className="flex flex-col justify-center text-left space-y-3 lg:max-w-md">
           <div className={`${textPrimary}`}>
-            <h1 className="text-3xl lg:text-4xl leading-normal lg:leading-normal font-semibold">
-              Accept payments
+            <h1 className="text-3xl lg:text-4xl font-semibold leading-normal lg:leading-normal ">
+              Ignite Auth
             </h1>
             <h1 className="text-3xl lg:text-4xl leading-normal lg:leading-normal font-semibold">
-              Directly to your
+              Elevate Your App's Security,
             </h1>
             <h1 className="text-3xl lg:text-4xl leading-normal lg:leading-normal font-semibold">
-              Account at
+              Simplify User Access
             </h1>
           </div>
-          <h1
+          {/* <h1
             className={`mt-2 lg:mt-4 text-3xl lg:text-4xl font-semibold ${textSecondary} w-fit transition-all ease-in-out`}
           >
             0% Transaction Fee
-          </h1>
+          </h1> */}
           <p className={`text-base leading-relaxed md:text:2xl ${textLight}`}>
             Revolutionize Your Payment Process with Dynamic QR Codes Service.
           </p>
