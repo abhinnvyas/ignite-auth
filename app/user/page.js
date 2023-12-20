@@ -8,8 +8,8 @@ import {
   foreground,
   textExtraLight,
 } from "@/color.js";
-// import BarChart from "@/components/Dashboard/BarChart";
-// import RadialBar from "@/components/Dashboard/RadialBar";
+import BarChart from "@/components/Dashboard/BarChart";
+import RadialBar from "@/components/Dashboard/RadialBar";
 import { useState } from "react";
 
 function Page() {
@@ -17,7 +17,7 @@ function Page() {
   const [UsedTxns, setUsedTxns] = useState(50);
   return (
     <div className="flex space-x-4 w-full">
-      {/* <Sidebar Active={"dashboard"} />
+      <Sidebar Active={"dashboard"} />
       <main className="w-full px-4 h-screen overflow-y-scroll">
         <div className={`${textPrimary} p-4  mt-5 `}>
           <h1 className="text-lg md:text-2xl lg:text-4xl font-semibold">
@@ -203,7 +203,7 @@ function Page() {
             </table>
           </div>
         </div>
-      </main> */}
+      </main>
     </div>
   );
 }
