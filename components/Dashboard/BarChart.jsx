@@ -35,7 +35,7 @@ function BarChart() {
   ];
   return (
     <div>
-      <Chart options={options} series={series} height={500} type="bar" />
+      <ApexCharts options={options} series={series} height={500} type="bar" />
     </div>
   );
 }

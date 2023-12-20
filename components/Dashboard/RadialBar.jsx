@@ -17,7 +17,7 @@ function RadialBar({ UsedTxns }) {
 
   return (
     <div className="">
-      <Chart options={options} series={options.series} type="radialBar" />
+      <ApexCharts options={options} series={options.series} type="radialBar" />
     </div>
   );
 }
