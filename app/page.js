@@ -29,7 +29,6 @@ export default function Home() {
   return (
     <div style={{ fontFamily: "Lato" }}>
       <Navbar />
-
       <div className="m-5">
         <Section1 />
         <Section2 />
