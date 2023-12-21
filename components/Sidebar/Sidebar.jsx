@@ -10,6 +10,7 @@ import {
   ArrowLeftIcon,
 } from "@heroicons/react/24/outline";
 import MenuItem from "./MenuItem";
+import Link from "next/link";
 
 function Sidebar({ Active }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -26,13 +27,15 @@ function Sidebar({ Active }) {
             isCollapsed ? "hidden" : "block"
           }`}
         >
-          <Image
-            className={`rounded-lg`}
-            src={Logo}
-            width={50}
-            height={50}
-            alt="logo"
-          />
+          <Link href="/user">
+            <Image
+              className={`rounded-lg`}
+              src={Logo}
+              width={50}
+              height={50}
+              alt="logo"
+            />
+          </Link>
           <h1 className={`font-semibold ${isCollapsed ? "hidden" : "block"}`}>
             Ignite Auth
           </h1>

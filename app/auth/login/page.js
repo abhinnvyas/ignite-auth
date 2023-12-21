@@ -4,6 +4,7 @@ import Image from "next/image";
 import Form from "@/components/LoginPage/Form";
 import Logo from "@/public/igniteauth_logo.png";
 import { QuestionMarkCircleIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 function Page() {
   return (
@@ -11,13 +12,15 @@ function Page() {
       {/* <Navbar /> */}
       <div className="flex items-center justify-between px-5 h-18 border-b-2 p-2">
         <div className="flex items-center space-x-1">
-          <Image
-            className="rounded-lg"
-            src={Logo}
-            width={40}
-            height={40}
-            alt="logo"
-          />
+          <Link href="/">
+            <Image
+              className="rounded-lg"
+              src={Logo}
+              width={40}
+              height={40}
+              alt="logo"
+            />
+          </Link>
           <h1 className="font-bold">Ignite Auth</h1>
         </div>
         <div

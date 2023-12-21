@@ -9,12 +9,16 @@ function Navbar() {
       className={`sticky top-0 z-50 flex items-center justify-between p-2   shadow-md bg-my_background`}
     >
       <div className="flex items-center space-x-1">
-        <Image src={Logo} width={40} height={40} alt="logo" />
+        <Link href="/">
+          <Image src={Logo} width={40} height={40} alt="logo" />
+        </Link>
         <h1 className="font-bold">Ignite Auth</h1>
       </div>
 
       <div className="hidden lg:block text-sm font-semibold ">
-        <h1 className={`text-my_light border-b-2 border-gray-800`}>Home</h1>
+        <Link href="/">
+          <h1 className={`text-my_light border-b-2 border-gray-800`}>Home</h1>
+        </Link>
       </div>
 
       <div className="hidden lg:flex space-x-4 items-center text-sm p-2 ">
