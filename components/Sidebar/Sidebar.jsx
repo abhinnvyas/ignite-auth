@@ -29,7 +29,7 @@ function Sidebar({ Active }) {
         >
           <Link href="/user">
             <Image
-              className={`rounded-lg`}
+              className={``}
               src={Logo}
               width={50}
               height={50}
