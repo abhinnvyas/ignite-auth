@@ -1,8 +1,5 @@
-"use client";
 import React from "react";
-// import Chart from "react-apexcharts";
-import dynamic from "next/dynamic";
-const ApexCharts = dynamic(() => import("react-apexcharts"), { ssr: false });
+import Chart from "react-apexcharts";
 
 function RadialBar({ UsedTxns }) {
   const options = {
@@ -10,14 +7,14 @@ function RadialBar({ UsedTxns }) {
       height: 350,
       type: "radialBar",
     },
-    series: [UsedTxns],
+    series: [70],
     labels: ["Transactions Used"],
     colors: ["#2F855A"],
   };
 
   return (
     <div className="">
-      <ApexCharts options={options} series={options.series} type="radialBar" />
+      <Chart options={options} series={options.series} type="radialBar" />
     </div>
   );
 }
