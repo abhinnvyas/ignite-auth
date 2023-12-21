@@ -1,11 +1,4 @@
 import React from "react";
-import {
-  textPrimary,
-  background,
-  textLight,
-  textSecondary,
-  foreground,
-} from "@/color.js";
 import Logo from "@/public/igniteauth_logo.png";
 import Image from "next/image";
 

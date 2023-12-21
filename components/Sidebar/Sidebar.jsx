@@ -1,12 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import {
-  textPrimary,
-  background,
-  textLight,
-  textSecondary,
-  foreground,
-} from "@/color.js";
 import Image from "next/image";
 import Logo from "@/public/igniteauth_logo.png";
 import {

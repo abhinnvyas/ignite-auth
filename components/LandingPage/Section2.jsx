@@ -1,13 +1,6 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import {
-  textPrimary,
-  background,
-  textLight,
-  textSecondary,
-  foreground,
-} from "@/color.js";
 import Lottie from "lottie-react";
 import animationData from "@/public/Lottie Files/2.json";
 

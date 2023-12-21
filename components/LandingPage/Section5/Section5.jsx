@@ -1,11 +1,4 @@
 import React from "react";
-import {
-  textPrimary,
-  background,
-  textLight,
-  textSecondary,
-  foreground,
-} from "@/color.js";
 import Card from "../Section5/Card";
 
 function Section5() {

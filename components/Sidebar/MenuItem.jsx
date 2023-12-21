@@ -1,11 +1,4 @@
 import React, { useEffect } from "react";
-import {
-  textPrimary,
-  background,
-  textLight,
-  textSecondary,
-  foreground,
-} from "@/color.js";
 import { redirect, usePathname } from "next/navigation";
 import Link from "next/link";
 

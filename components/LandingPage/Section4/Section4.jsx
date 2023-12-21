@@ -1,11 +1,4 @@
 import React from "react";
-import {
-  textPrimary,
-  background,
-  textLight,
-  textSecondary,
-  foreground,
-} from "@/color.js";
 import Card from "./Card";
 import Section41 from "@/public/section4(1).png";
 import Section42 from "@/public/section4(2).png";

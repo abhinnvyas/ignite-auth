@@ -1,12 +1,5 @@
 import React from "react";
 import Card from "./Card";
-import {
-  textPrimary,
-  background,
-  textLight,
-  textSecondary,
-  foreground,
-} from "@/color.js";
 import animationData1 from "@/public/Lottie Files/Section3/first.json";
 import animationData2 from "@/public/Lottie Files/Section3/second.json";
 import animationData3 from "@/public/Lottie Files/Section3/third.json";

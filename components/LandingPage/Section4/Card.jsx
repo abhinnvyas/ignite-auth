@@ -1,13 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import {
-  textPrimary,
-  background,
-  textLight,
-  textSecondary,
-  foreground,
-} from "@/color.js";
-
 function Card({ image, heading, paragraph }) {
   return (
     <div>

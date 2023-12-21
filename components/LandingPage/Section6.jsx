@@ -1,12 +1,4 @@
 import React from "react";
-import {
-  textPrimary,
-  background,
-  textLight,
-  textSecondary,
-  foreground,
-} from "@/color.js";
-
 function Section6() {
   return (
     <div className="max-w-screen-xl mx-auto overflow-x-hidden">

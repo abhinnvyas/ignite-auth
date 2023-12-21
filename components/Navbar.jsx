@@ -1,14 +1,6 @@
 import React from "react";
 import Logo from "@/public/igniteauth_logo.png";
 import Image from "next/image";
-import {
-  textPrimary,
-  background,
-  textLight,
-  textSecondary,
-  foreground,
-} from "@/color.js";
-
 function Navbar() {
   const ishidden = true;
   console.log(background);
