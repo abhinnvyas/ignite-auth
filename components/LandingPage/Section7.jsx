@@ -15,7 +15,7 @@ function Section7() {
           >
             <div className="flex justify-start items-center text-left space-x-2 ">
               <Image src={Logo} width={40} height={40} alt="logo" />
-              <h1 className="font-bold">UPI Gateway</h1>
+              <h1 className="font-bold">Ignite Auth</h1>
             </div>
           </a>
           <p

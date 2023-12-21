@@ -3,14 +3,13 @@ import Logo from "@/public/igniteauth_logo.png";
 import Image from "next/image";
 function Navbar() {
   const ishidden = true;
-  console.log(background);
   return (
     <div
-      className={`sticky top-0 z-50 flex items-center justify-between p-2 bg-white  shadow-md bg-my_background`}
+      className={`sticky top-0 z-50 flex items-center justify-between p-2   shadow-md bg-my_background`}
     >
       <div className="flex items-center space-x-1">
         <Image src={Logo} width={40} height={40} alt="logo" />
-        <h1 className="font-bold">UPI Gateway</h1>
+        <h1 className="font-bold">Ignite Auth</h1>
       </div>
 
       <div className="hidden lg:block text-sm font-semibold ">

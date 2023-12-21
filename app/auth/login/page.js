@@ -1,14 +1,5 @@
 "use client";
-import Navbar from "@/components/Navbar";
-import React, { useState } from "react";
-import {
-  textPrimary,
-  background,
-  textLight,
-  textSecondary,
-  foreground,
-  textExtraLight,
-} from "@/color.js";
+import React from "react";
 import Image from "next/image";
 import Form from "@/components/LoginPage/Form";
 import Logo from "@/public/igniteauth_logo.png";
@@ -17,6 +8,7 @@ import { QuestionMarkCircleIcon } from "@heroicons/react/24/outline";
 function Page() {
   return (
     <div className="min-h-screen ">
+      {/* <Navbar /> */}
       <div className="flex items-center justify-between px-5 h-18 border-b-2 p-2">
         <div className="flex items-center space-x-1">
           <Image
@@ -26,10 +18,11 @@ function Page() {
             height={40}
             alt="logo"
           />
-          <h1 className="font-bold">UPI Gateway</h1>
+          <h1 className="font-bold">Ignite Auth</h1>
         </div>
         <div
-          className={`flex items-center px-2 py-1 bg-white text-my_extra_light border-2 rounded-lg`}
+          className={`flex items-center px-2 py-1 bg-white text-my_light border-my_light hover:cursor-pointer hover:shadow-md border-2 rounded-lg
+          transition-all ease-in-out`}
         >
           <div>
             <QuestionMarkCircleIcon className="w-6 h-6" />
@@ -37,7 +30,7 @@ function Page() {
           <p>Get Help</p>
         </div>
       </div>
-      {/* <Navbar /> */}
+
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between lg:space-x-10 mx-10 h-">
         <div className="max-w-2xl flex-1 text-center mx-auto mb-20">
           <div className="border flex flex-1 mt-10 p-3">

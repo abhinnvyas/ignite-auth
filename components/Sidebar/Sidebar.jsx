@@ -34,7 +34,7 @@ function Sidebar({ Active }) {
             alt="logo"
           />
           <h1 className={`font-semibold ${isCollapsed ? "hidden" : "block"}`}>
-            UPI Gateway
+            Ignite Auth
           </h1>
         </div>
         <div

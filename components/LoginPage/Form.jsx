@@ -3,14 +3,6 @@ import Cookies from "js-cookie";
 import { sendOTP, verifyOTP } from "@/app/api/auth/login";
 import { useRouter } from "next/navigation";
 import { sendOTPSignUp, verifyOTPSignUp } from "@/app/api/auth/signup";
-import {
-  textPrimary,
-  background,
-  textLight,
-  textSecondary,
-  foreground,
-  textExtraLight,
-} from "@/color.js";
 
 function Form() {
   const [PhoneNumber, setPhoneNumber] = useState("");
@@ -76,7 +68,7 @@ function Form() {
       <div className="flex space-x-2 justify-center items-center mb-5">
         <h1 className="text-2xl">Sign in to</h1>
         <h1 className={`text-2xl font-semibold text-my_secondary`}>
-          UPI Gateway
+          Ignite Auth
         </h1>
       </div>
       {Flag ? (
