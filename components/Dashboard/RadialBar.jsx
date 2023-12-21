@@ -7,7 +7,7 @@ function RadialBar({ UsedTxns }) {
       height: 350,
       type: "radialBar",
     },
-    series: [70],
+    series: [50],
     labels: ["Transactions Used"],
     colors: ["#2F855A"],
   };
