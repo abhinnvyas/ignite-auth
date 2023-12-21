@@ -13,7 +13,7 @@ import Lottie from "lottie-react";
 function Card({ heading, paragraph, linkHref, imageData, loop = true }) {
   return (
     <div
-      className={`relative flex ${background} flex-col lg:flex-row p-4 lg:p-7 rounded-xl border overflow-hidden items-center col-span-1 lg:col-span-2 ${textPrimary}`}
+      className={`relative flex bg-my_background flex-col lg:flex-row p-4 lg:p-7 rounded-xl border overflow-hidden items-center col-span-1 lg:col-span-2 text-my_primary`}
     >
       <div className="lg:mr-7  w-full lg:w-1/2 xl:w-2/3">
         <div className="font-medium text-lg ">{heading}</div>

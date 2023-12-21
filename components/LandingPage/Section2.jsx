@@ -17,7 +17,7 @@ function Section2() {
       <div className="max-w-screen-xl mx-auto px-4 sm:px-8 md:px-4 xl:px-0 mb-20 ">
         <div className="flex flex-col items-center">
           <h1
-            className={`mb-3 font-bold text-left text-base text-primary ${textSecondary}`}
+            className={`mb-3 font-bold text-left text-base text-primary text-my_secondary`}
           >
             How it works
           </h1>
@@ -37,17 +37,17 @@ function Section2() {
           <div className="flex flex-col justify-start space-y-4 ">
             <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-4 lg:space-x-10 ">
               <div
-                className={`flex flex-col items-center justify-center w-16 h-16  rounded-full ${foreground}`}
+                className={`flex flex-col items-center justify-center w-16 h-16  rounded-full bg-my_secondary`}
               >
                 <div
-                  className={`h-8 items-center justify-center w-1/2 flex ${background} rounded-full`}
+                  className={`h-8 items-center justify-center w-1/2 flex bg-my_background rounded-full`}
                 >
-                  <h2 className={`text-lg ${textPrimary} font-normal`}>1</h2>
+                  <h2 className={`text-lg text-my_primary font-normal`}>1</h2>
                 </div>
               </div>
               <div>
                 <h2
-                  className={`mb-2 text-lg font-normal ${textPrimary} transition-all`}
+                  className={`mb-2 text-lg font-normal text-my_primary transition-all`}
                 >
                   Customer will select the product on your website and proceed
                   to checkout.
@@ -56,17 +56,17 @@ function Section2() {
             </div>
             <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-4 lg:space-x-10 ">
               <div
-                className={`flex flex-col items-center justify-center w-16 h-16  rounded-full ${foreground}`}
+                className={`flex flex-col items-center justify-center w-16 h-16  rounded-full bg-my_secondary`}
               >
                 <div
-                  className={`h-8 items-center justify-center w-1/2 flex ${background} rounded-full`}
+                  className={`h-8 items-center justify-center w-1/2 flex bg-my_background rounded-full`}
                 >
-                  <h2 className={`text-lg ${textPrimary} font-normal`}>2</h2>
+                  <h2 className={`text-lg text-my_primary font-normal`}>2</h2>
                 </div>
               </div>
               <div>
                 <h2
-                  className={`mb-2 text-lg font-normal ${textPrimary} transition-all`}
+                  className={`mb-2 text-lg font-normal text-my_primary transition-all`}
                 >
                   During checkout, UPIGateway generates a dynamic QR code that
                   is displayed on your website.
@@ -75,17 +75,17 @@ function Section2() {
             </div>
             <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-4 lg:space-x-10 ">
               <div
-                className={`flex flex-col items-center justify-center w-16 h-16  rounded-full ${foreground}`}
+                className={`flex flex-col items-center justify-center w-16 h-16  rounded-full bg-my_secondary`}
               >
                 <div
-                  className={`h-8 items-center justify-center w-1/2 flex ${background} rounded-full`}
+                  className={`h-8 items-center justify-center w-1/2 flex bg-my_background rounded-full`}
                 >
-                  <h2 className={`text-lg ${textPrimary} font-normal`}>3</h2>
+                  <h2 className={`text-lg text-my_primary font-normal`}>3</h2>
                 </div>
               </div>
               <div>
                 <h2
-                  className={`mb-2 text-lg font-normal ${textPrimary} transition-all`}
+                  className={`mb-2 text-lg font-normal text-my_primary transition-all`}
                 >
                   The customer will make the payment through any UPI app by
                   scanning the QR code.
@@ -94,17 +94,17 @@ function Section2() {
             </div>
             <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-4 lg:space-x-10 ">
               <div
-                className={`flex flex-col items-center justify-center w-16 h-16  rounded-full ${foreground}`}
+                className={`flex flex-col items-center justify-center w-16 h-16  rounded-full bg-my_secondary`}
               >
                 <div
-                  className={`h-8 items-center justify-center w-1/2 flex ${background} rounded-full`}
+                  className={`h-8 items-center justify-center w-1/2 flex bg-my_background rounded-full`}
                 >
-                  <h2 className={`text-lg ${textPrimary} font-normal`}>4</h2>
+                  <h2 className={`text-lg text-my_primary font-normal`}>4</h2>
                 </div>
               </div>
               <div>
                 <h2
-                  className={`mb-2 text-lg font-normal ${textPrimary} transition-all`}
+                  className={`mb-2 text-lg font-normal text-my_primary transition-all`}
                 >
                   After payment, UPIGateway will verify the transaction and send
                   a status response through webhook.

@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         style={{ fontFamily: "Lato" }}
-        className={` ${background} ${textPrimary} 
+        className={` bg-my_background text-my_primary 
        ${inter.className}`}
       >
         {children}

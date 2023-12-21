@@ -29,7 +29,7 @@ function Page() {
           <h1 className="font-bold">UPI Gateway</h1>
         </div>
         <div
-          className={`flex items-center px-2 py-1 bg-white ${textExtraLight} border-2 rounded-lg`}
+          className={`flex items-center px-2 py-1 bg-white text-my_extra_light border-2 rounded-lg`}
         >
           <div>
             <QuestionMarkCircleIcon className="w-6 h-6" />

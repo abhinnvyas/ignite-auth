@@ -12,7 +12,7 @@ import Image from "next/image";
 function Section7() {
   return (
     <footer
-      className={`${textLight} p-4 transition-all duration-500 ease-in-out transform bg-gray-100`}
+      className={`text-my_light p-4 transition-all duration-500 ease-in-out transform bg-gray-100`}
     >
       <div className="max-w-screen-xl flex flex-col flex-wrap mx-auto items-start md:flex-row md:flex-no-wrap py-5 px-4 sm:px-8 md:px-4 xl:px-0 md:grid gap-8 md:grid-cols-3">
         <div className="flex flex-col mx-auto md:mx-0 text-left col-span-1">
@@ -47,7 +47,7 @@ function Section7() {
               </li>
               <li>
                 <a
-                  className={`font-medium text-left text-md text-primary hover:text-primary_dark hover:underline ${textSecondary}`}
+                  className={`font-medium text-left text-md text-primary hover:text-primary_dark hover:underline text-my_secondary`}
                   href=""
                 >
                   support@upigateway.com
@@ -75,7 +75,7 @@ function Section7() {
                         data-parsley-type-message="Please enter a valid email address"
                       />
                       <button
-                        className={`mt-4 px-8 py-2  border ${foreground} text-white font-medium rounded modal-open`}
+                        className={`mt-4 px-8 py-2  border bg-my_secondary text-white font-medium rounded modal-open`}
                         type="submit"
                         data-toggle="modal"
                         data-target="prepaidPlan"

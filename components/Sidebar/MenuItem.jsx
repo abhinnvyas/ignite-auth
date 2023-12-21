@@ -22,8 +22,8 @@ function MenuItem({
       <div
         className={`flex ${
           ActiveTab == CurrentTab
-            ? `${textSecondary} bg-green-100`
-            : `${textPrimary} hover:bg-gray-100`
+            ? `text-my_secondary bg-green-100`
+            : `text-my_primary hover:bg-gray-100`
         }  px-4 items-center justify-left cursor-pointer space-x-4  p-2 rounded-lg transition-all ease-in-out`}
       >
         <Icon className={`h-6 w-6 `} />

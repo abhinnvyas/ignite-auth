@@ -14,19 +14,9 @@ import Section4 from "@/components/LandingPage/Section4/Section4";
 import Section5 from "@/components/LandingPage/Section5/Section5";
 import Section6 from "@/components/LandingPage/Section6";
 import Section7 from "@/components/LandingPage/Section7";
-// import WebFontLoader from "webfontloader";
-// import { useEffect } from "react";
 
 export default function Home() {
-  // useEffect(() => {
-  //   WebFontLoader.load({
-  //     google: {
-  //       families: ["Lato"],
-  //     },
-  //   });
-  // }, []);
   return (
-    // style={{ fontFamily: "Lato" }}
     <div>
       <Navbar />
       <div className="m-5">

@@ -16,8 +16,8 @@ function Card({ heading, feedback, name, industry }) {
         className={`flex flex-col justify-start items-center p-8 text-center bg-gray-50 md:p-12 border-b lg:border-b-0 lg:border-r rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl h-full`}
       >
         <div className="mx-auto mb-8 max-w-2xl">
-          <h1 className={`text-lg font-semibold ${textPrimary}`}>{heading}</h1>
-          <p className={`my-4 ${textLight}`}>"{feedback}"</p>
+          <h1 className={`text-lg font-semibold text-my_primary`}>{heading}</h1>
+          <p className={`my-4 text-my_light`}>"{feedback}"</p>
         </div>
         <div className="flex justify-center items-center space-x-3">
           <div className="font-medium  text-left space-y-0.5 ">

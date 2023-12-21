@@ -16,11 +16,11 @@ function Section3() {
   return (
     <div className="max-w-screen-lg mx-auto px-4 sm:px-8 md:px-4 xl:px-0 ">
       <div className="flex flex-col items-center">
-        <h1 className={`mb-3 font-bold text-left text-base ${textSecondary}`}>
+        <h1 className={`mb-3 font-bold text-left text-base text-my_secondary`}>
           UPIGateway{"'"}s Use Cases
         </h1>
         <h1
-          className={`font-bold text-3xl lg:text-4xl text-center ${textPrimary}`}
+          className={`font-bold text-3xl lg:text-4xl text-center text-my_primary`}
         >
           Unlock the potential of UPIGateway's Dynamic QR in different scenarios
         </h1>
