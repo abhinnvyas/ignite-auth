@@ -3,6 +3,7 @@ import Cookies from "js-cookie";
 import { sendOTP, verifyOTP } from "@/app/api/auth/login";
 import { useRouter } from "next/navigation";
 import { sendOTPSignUp, verifyOTPSignUp } from "@/app/api/auth/signup";
+import Loading from "../Loading";
 
 function Form() {
   const [PhoneNumber, setPhoneNumber] = useState("");
@@ -117,7 +118,7 @@ function Form() {
             />
           </div>
           <input
-            className={`w-full p-2 mt-5 bg-my_secondary  rounded-lg text-white hover:cursor-pointer shadow-md hover:shadow-lg transition-all ease-in-out active:scale-95`}
+            className={`w-full p-2 mt-4 bg-my_secondary  rounded-lg text-white hover:cursor-pointer shadow-md hover:shadow-lg transition-all ease-in-out active:scale-95`}
             value={IsLoading ? "Loading" : "Send OTP"}
             type="submit"
           />
