@@ -8,6 +8,7 @@ import {
   ShoppingCartIcon,
   PaperClipIcon,
   ArrowLeftIcon,
+  CommandLineIcon,
 } from "@heroicons/react/24/outline";
 import MenuItem from "./MenuItem";
 import Link from "next/link";
@@ -87,6 +88,14 @@ function Sidebar({ Active }) {
             Icon={PaperClipIcon}
             Text="Active Plan"
             RedirectLink="/user/activeplan"
+          />
+          <MenuItem
+            isCollapsed={isCollapsed}
+            ActiveTab={Active}
+            CurrentTab={"api_credentials"}
+            Icon={CommandLineIcon}
+            Text="API Keys & Web Hooks"
+            RedirectLink="/user/api_credentials"
           />
         </div>
       </div>
