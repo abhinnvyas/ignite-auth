@@ -5,7 +5,7 @@ import React from "react";
 function Card({ image, heading, Icon, linktext, link }) {
   return (
     <Link href={link}>
-      <div className="flex items-center justify-center space-x-4 border-2 rounded-lg p-4 w-fit ">
+      <div className="w-full flex items-center justify-center space-x-4 border-2 rounded-lg p-4  ">
         <div>
           <Image className="w-16 h-16 rounded-full" src={image} />
         </div>

@@ -5,34 +5,40 @@ import { EyeIcon, InboxArrowDownIcon } from "@heroicons/react/24/outline";
 
 function Section2() {
   return (
-    <div>
-      <Card
-        image={PostmanLogo}
-        heading={"Postman Collection"}
-        Icon={EyeIcon}
-        linktext={"View Collection"}
-        link={
-          "https://documenter.getpostman.com/view/26156306/2s9YeN39Gr#e619855a-2e3f-434a-b5f4-634653cd81f9"
-        }
-      />
-      <Card
-        image={PostmanLogo}
-        heading={"Postman Collection"}
-        Icon={InboxArrowDownIcon}
-        linktext={"Download Code"}
-        link={
-          "https://documenter.getpostman.com/view/26156306/2s9YeN39Gr#e619855a-2e3f-434a-b5f4-634653cd81f9"
-        }
-      />
-      <Card
-        image={PostmanLogo}
-        heading={"Postman Collection"}
-        Icon={InboxArrowDownIcon}
-        linktext={"Downoad Code"}
-        link={
-          "https://documenter.getpostman.com/view/26156306/2s9YeN39Gr#e619855a-2e3f-434a-b5f4-634653cd81f9"
-        }
-      />
+    <div className="flex flex-col lg:flex-row lg:space-x-2 lg:space-y-0 space-y-2 mb-10 mt-4 w-full justify-evenly">
+      <div className="flex-1">
+        <Card
+          image={PostmanLogo}
+          heading={"Postman Collection"}
+          Icon={EyeIcon}
+          linktext={"View Collection"}
+          link={
+            "https://documenter.getpostman.com/view/26156306/2s9YeN39Gr#e619855a-2e3f-434a-b5f4-634653cd81f9"
+          }
+        />
+      </div>
+      <div className="flex-1">
+        <Card
+          image={PostmanLogo}
+          heading={"Postman Collection"}
+          Icon={InboxArrowDownIcon}
+          linktext={"Download Code"}
+          link={
+            "https://documenter.getpostman.com/view/26156306/2s9YeN39Gr#e619855a-2e3f-434a-b5f4-634653cd81f9"
+          }
+        />
+      </div>
+      <div className="flex-1">
+        <Card
+          image={PostmanLogo}
+          heading={"Postman Collection"}
+          Icon={InboxArrowDownIcon}
+          linktext={"Downoad Code"}
+          link={
+            "https://documenter.getpostman.com/view/26156306/2s9YeN39Gr#e619855a-2e3f-434a-b5f4-634653cd81f9"
+          }
+        />
+      </div>
     </div>
   );
 }
