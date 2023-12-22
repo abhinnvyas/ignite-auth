@@ -9,6 +9,7 @@ import {
   PaperClipIcon,
   ArrowLeftIcon,
   CommandLineIcon,
+  CodeBracketSquareIcon,
 } from "@heroicons/react/24/outline";
 import MenuItem from "./MenuItem";
 import Link from "next/link";
@@ -94,8 +95,16 @@ function Sidebar({ Active }) {
             ActiveTab={Active}
             CurrentTab={"api_credentials"}
             Icon={CommandLineIcon}
-            Text="API Keys & Web Hooks"
+            Text="API Keys"
             RedirectLink="/user/api_credentials"
+          />
+          <MenuItem
+            isCollapsed={isCollapsed}
+            ActiveTab={Active}
+            CurrentTab={"api_documentation"}
+            Icon={CodeBracketSquareIcon}
+            Text="API Documentation"
+            RedirectLink="/user/api_documentation"
           />
         </div>
       </div>

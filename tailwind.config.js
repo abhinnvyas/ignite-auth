@@ -16,6 +16,8 @@ module.exports = {
       colors: {
         my_primary: "black",
         my_secondary: "#2F855A",
+        my_secondary: "#2F855A",
+        my_secondary_dark: "#166534",
         my_light: "#1A202C",
         my_extra_light: "#E2E8F0",
         my_background: "#FFFFFF",
