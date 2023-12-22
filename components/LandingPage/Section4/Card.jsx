@@ -7,15 +7,11 @@ function Card({ image, heading, paragraph }) {
         <div className="flex items-start justify-start mb-3">
           <Image className="w-20 h-20" src={image} />
         </div>
-        <h2 className={`mb-2 text-lg font-medium text-my_primary`}>
-          Error-free Transactions
-        </h2>
+        <h2 className={`mb-2 text-lg font-bold text-my_primary`}>{heading}</h2>
         <p
           className={`mb-4 text-base text-my_light leading-relaxed font-normal`}
         >
-          Simplify payment collection with our dynamic QR code feature that
-          allows you to set the payment amount and gives you complete control
-          over the transaction.
+          {paragraph}
         </p>
       </div>
     </div>

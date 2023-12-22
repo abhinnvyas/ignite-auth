@@ -18,30 +18,30 @@ function Section4() {
           <h1
             className={`font-bold text-3xl lg:text-4xl text-center text-my_primary`}
           >
-            Advantages of integrating Ignite Auth's Dynamic QR code service
+            Advantages of using Ignite Auth
           </h1>
         </div>
         <div className="mt-10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
             <Card
               image={Section41}
-              heading="Error-free Transactions"
-              paragraph="Simplify payment collection with our dynamic QR code feature that allows you to set the payment amount and gives you complete control over the transaction."
+              heading="Two-Factor Authentication (2FA)"
+              paragraph="Ignite Auth provides a robust layer of security through its two-factor authentication (2FA) mechanism. By integrating this solution, you add an extra step to the authentication process, requiring users to verify their identity not just with a password but also with a one-time password (OTP) delivered via WhatsApp. This significantly reduces the risk of unauthorized access, data breaches, and other security threats."
             />
             <Card
               image={Section42}
-              heading="Supports all UPI apps"
-              paragraph="Accept payments from all UPI and bank apps, including Paytm, Google Pay, PhonePe, BHIM, and more."
+              heading="WhatsApp Integration"
+              paragraph="Leveraging WhatsApp for OTP delivery makes the authentication process more user-friendly. Many users are already familiar with WhatsApp, and receiving OTPs through this widely-used platform adds a level of convenience. This streamlined user experience contributes to higher user satisfaction and adoption rates."
             />
             <Card
               image={Section43}
-              heading="Secure & seamless"
-              paragraph="Merchants can generate a unique QR code for each order, which can be easily displayed on a POS terminal or website for convenient payment collection."
+              heading="Credits System"
+              paragraph="Ignite Auth's credit-based pricing model allows for flexibility and cost control. Users can purchase credits based on their specific authentication needs, and the affordable pricing per credit (0.1 INR) ensures a cost-effective solution. This flexibility is particularly beneficial for businesses with varying authentication volumes."
             />
             <Card
               image={Section44}
-              heading="Easy Integration"
-              paragraph="Connect seamlessly using our no-code setup, developer-friendly APIs, and native SDK."
+              heading="Adaptable to Various Sectors"
+              paragraph="Ignite Auth is versatile and applicable across different industries. Whether you are in e-commerce, finance, healthcare, education, or any other sector, Ignite Auth provides a secure and scalable authentication solution. Its versatility makes it suitable for a wide range of use cases, allowing businesses from various domains to enhance their security measures."
             />
           </div>
         </div>
