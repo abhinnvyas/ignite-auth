@@ -13,12 +13,12 @@ function Section4() {
           <h1
             className={`mb-3 font-bold text-left text-base text-my_secondary`}
           >
-            UPIGateway{"'"}s Features
+            Ignite Auth{"'"}s Features
           </h1>
           <h1
             className={`font-bold text-3xl lg:text-4xl text-center text-my_primary`}
           >
-            Advantages of integrating UPIGateway's Dynamic QR code service
+            Advantages of integrating Ignite Auth's Dynamic QR code service
           </h1>
         </div>
         <div className="mt-10">

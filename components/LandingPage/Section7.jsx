@@ -43,7 +43,7 @@ function Section7() {
                   className={`font-medium text-left text-md text-primary hover:text-primary_dark hover:underline text-my_secondary`}
                   href=""
                 >
-                  support@upigateway.com
+                  support@Ignite Auth.com
                 </a>
               </li>
             </ul>
@@ -87,17 +87,17 @@ function Section7() {
       <div className="w-full mt-4 rounded-b-lg bg-gray-100">
         <div className="max-w-screen-xl flex flex-col flex-wrap mx-auto items-start md:flex-row md:flex-no-wrap py-5 px-4 sm:px-8 md:px-4 xl:px-0">
           <p className="text-xs text-start text-black sm:text-left">
-            *UPIGateway provides Dynamic QR Generating service. UPIGateway does
-            not offer payment gateway service, nor does it provide UPI ID and
-            UPI Merchant account. Please read our policy and T&C before using
-            our services.
+            *Ignite Auth provides Dynamic QR Generating service. Ignite Auth
+            does not offer payment gateway service, nor does it provide UPI ID
+            and UPI Merchant account. Please read our policy and T&C before
+            using our services.
           </p>
         </div>
       </div>
       <div className="w-full rounded-b-lg bg-gray-200">
         <div className="max-w-screen-xl flex flex-col flex-wrap mx-auto items-start md:flex-row md:flex-no-wrap py-5 px-4 sm:px-8 md:px-4 lg:px-5">
           <p className="text-sm text-start  text-black sm:text-left">
-            © UPIGateway 2020-23, All Rights Reserved.
+            © Ignite Auth 2020-23, All Rights Reserved.
           </p>
         </div>
       </div>

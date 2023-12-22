@@ -11,19 +11,21 @@ function Form() {
   const [Flag, setFlag] = useState(false);
   const [IsSignUpFlag, setIsSignUpFlag] = useState(false);
   const [IsLoading, setIsLoading] = useState(false);
+  const [AppName, setAppName] = useState("");
+
   const router = useRouter();
 
   const handleSubmitSendOTP = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    sendOTP(PhoneNumber)
+    sendOTP(PhoneNumber, AppName)
       .then((res) => {
         setVerficationID(res.verificationId);
         setFlag(true);
         setIsLoading(false);
       })
       .catch((err) => {
-        sendOTPSignUp(PhoneNumber).then((res) => {
+        sendOTPSignUp(PhoneNumber, AppName).then((res) => {
           setVerficationID(res.verificationId);
           setIsSignUpFlag(true);
           setFlag(true);
@@ -34,10 +36,9 @@ function Form() {
 
   const handleSubmitVerifyOTP = async (e) => {
     e.preventDefault();
-    console.log(IsSignUpFlag);
     setIsLoading(true);
     !IsSignUpFlag
-      ? verifyOTP(PhoneNumber, OTP, VerficationID)
+      ? verifyOTP(PhoneNumber, OTP, VerficationID, AppName)
           .then((res) => {
             console.log(res);
             Cookies.set("ClientId", res.ClientId, { expires: 7, secure: true });
@@ -49,7 +50,7 @@ function Form() {
             alert("OTP has Expired!");
             console.log(err);
           })
-      : verifyOTPSignUp(PhoneNumber, OTP, VerficationID)
+      : verifyOTPSignUp(PhoneNumber, OTP, VerficationID, AppName)
           .then((res) => {
             console.log(res);
             Cookies.set("ClientId", res.ClientId, { expires: 7, secure: true });
@@ -104,9 +105,20 @@ function Form() {
               required
             />
           </div>
+          <div className="flex flex-col justify-center space-y-2 mt-2">
+            <label className={`text-my_light font-normal`}>App Name: </label>
+            <input
+              className="w-full p-2 border-2 rounded-lg border-gray-200 outline-none hover:border-gray-600 focus:border-green-600"
+              onChange={(e) => setAppName(e.target.value)}
+              type="text"
+              value={AppName}
+              placeholder="Enter your App Name"
+              required
+            />
+          </div>
           <input
-            className={`w-full p-2 mt-4 bg-my_secondary  rounded-lg text-white hover:cursor-pointer shadow-md hover:shadow-lg transition-all ease-in-out active:scale-95`}
-            value={IsLoading ? "Loading" : "Verify OTP"}
+            className={`w-full p-2 mt-5 bg-my_secondary  rounded-lg text-white hover:cursor-pointer shadow-md hover:shadow-lg transition-all ease-in-out active:scale-95`}
+            value={IsLoading ? "Loading" : "Send OTP"}
             type="submit"
           />
         </form>

@@ -27,8 +27,8 @@ function Section1() {
           <p
             className={`leading-relaxed text-my_light text-xs sm:text-xs text-left`}
           >
-            *UPIGateway provides Dynamic QR Generating service. UPIGateway does
-            not provide payment gateway service.
+            *Ignite Auth provides Dynamic QR Generating service. Ignite Auth
+            does not provide payment gateway service.
           </p>
           <a
             className={`text-left mb-4 sm:mb-6 md:mb-8 font-bold text-my_primary  border-b-2 w-fit border-black`}

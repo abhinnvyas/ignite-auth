@@ -1,10 +1,10 @@
 import axios from "axios";
 import { BASE_URL } from "../../api.config";
 
-export async function sendOTP(phone) {
+export async function sendOTP(phone, appName) {
   try {
     const data = {
-      AppName: "Ignite_Auth_Frontend",
+      AppName: appName,
       PhoneNumber: phone,
     };
 
@@ -16,12 +16,12 @@ export async function sendOTP(phone) {
   }
 }
 
-export async function verifyOTP(phone, otp, verificationId) {
+export async function verifyOTP(phone, otp, verificationId, appName) {
   try {
     const data = {
       otp: otp,
       verificationId: verificationId,
-      AppName: "Ignite_Auth_Frontend",
+      AppName: appName,
       PhoneNumber: phone,
     };
 

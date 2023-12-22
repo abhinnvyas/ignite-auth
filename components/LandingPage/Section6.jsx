@@ -10,7 +10,7 @@ function Section6() {
             Start accepting error-free payments from your customers with
           </div>
           <div className="mb-4 text-xl md:mb-0 font-medium text-left">
-            UPIGateway's Dynamic QR.
+            Ignite Auth's Dynamic QR.
           </div>
         </div>
         <a

@@ -15,7 +15,7 @@ function Section2() {
             How it works
           </h1>
           <h1 className="font-bold text-3xl lg:text-4xl text-center ">
-            How does UPIGateway Dynamic QR work?
+            How does Ignite Auth Dynamic QR work?
           </h1>
         </div>
         <div className="flex flex-col lg:flex-row justify-center lg:items-center space-y-5 lg:space-x-10 mt-10 ">
@@ -61,7 +61,7 @@ function Section2() {
                 <h2
                   className={`mb-2 text-lg font-normal text-my_primary transition-all`}
                 >
-                  During checkout, UPIGateway generates a dynamic QR code that
+                  During checkout, Ignite Auth generates a dynamic QR code that
                   is displayed on your website.
                 </h2>
               </div>
@@ -99,8 +99,8 @@ function Section2() {
                 <h2
                   className={`mb-2 text-lg font-normal text-my_primary transition-all`}
                 >
-                  After payment, UPIGateway will verify the transaction and send
-                  a status response through webhook.
+                  After payment, Ignite Auth will verify the transaction and
+                  send a status response through webhook.
                 </h2>
               </div>
             </div>
