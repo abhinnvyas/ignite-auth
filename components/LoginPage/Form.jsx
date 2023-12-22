@@ -3,7 +3,6 @@ import Cookies from "js-cookie";
 import { sendOTP, verifyOTP } from "@/app/api/auth/login";
 import { useRouter } from "next/navigation";
 import { sendOTPSignUp, verifyOTPSignUp } from "@/app/api/auth/signup";
-import Loading from "../Loading.jsx";
 import Lottie from "lottie-react";
 import animationData from "@/public/Lottie Files/Loading.json";
 
