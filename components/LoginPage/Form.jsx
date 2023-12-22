@@ -3,7 +3,9 @@ import Cookies from "js-cookie";
 import { sendOTP, verifyOTP } from "@/app/api/auth/login";
 import { useRouter } from "next/navigation";
 import { sendOTPSignUp, verifyOTPSignUp } from "@/app/api/auth/signup";
-import Loading from "../Loading";
+import Loading from "../Loading.jsx";
+import Lottie from "lottie-react";
+import animationData from "@/public/Lottie Files/Loading.json";
 
 function Form() {
   const [PhoneNumber, setPhoneNumber] = useState("");
@@ -67,12 +69,13 @@ function Form() {
 
   return (
     <div>
-      <div className="flex space-x-2 justify-center items-center mb-5">
+      <div className="flex space-x-2 justify-center items-center mb-5 ">
         <h1 className="text-2xl">Sign in to</h1>
         <h1 className={`text-2xl font-semibold text-my_secondary`}>
           Ignite Auth
         </h1>
       </div>
+
       {Flag ? (
         <form name="Verify OTP" onSubmit={handleSubmitVerifyOTP}>
           <div className="flex flex-col ">
@@ -86,11 +89,17 @@ function Form() {
               required
             />
           </div>
-          <input
-            className={`w-full p-2 mt-4 bg-my_secondary  rounded-lg text-white hover:cursor-pointer shadow-md hover:shadow-lg transition-all ease-in-out active:scale-95`}
-            value={IsLoading ? "Loading" : "Verify OTP"}
+
+          <button
+            className="w-full p-2 mt-4 bg-my_secondary  rounded-lg text-white hover:cursor-pointer shadow-md hover:shadow-lg transition-all ease-in-out active:scale-95 flex items-center justify-center h-10"
             type="submit"
-          />
+          >
+            {IsLoading ? (
+              <Lottie className="w-6 h-6 " animationData={animationData} />
+            ) : (
+              "Verify OTP"
+            )}
+          </button>
         </form>
       ) : (
         <form name="Send OTP" onSubmit={handleSubmitSendOTP}>
@@ -117,11 +126,17 @@ function Form() {
               required
             />
           </div>
-          <input
-            className={`w-full p-2 mt-4 bg-my_secondary  rounded-lg text-white hover:cursor-pointer shadow-md hover:shadow-lg transition-all ease-in-out active:scale-95`}
-            value={IsLoading ? "Loading" : "Send OTP"}
+
+          <button
+            className="w-full p-2 mt-4 bg-my_secondary  rounded-lg text-white hover:cursor-pointer shadow-md hover:shadow-lg transition-all ease-in-out active:scale-95 flex items-center justify-center h-10"
             type="submit"
-          />
+          >
+            {IsLoading ? (
+              <Lottie className="w-6 h-6 " animationData={animationData} />
+            ) : (
+              "Send OTP"
+            )}
+          </button>
         </form>
       )}
     </div>

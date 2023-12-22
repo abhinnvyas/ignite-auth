@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import animationData from "@/components/Loading.jsx"; // Replace with your Lottie animation file
+import animationData from "@/public/Lottie Files/Loading.json";
 
 function Loading() {
   const defaultOptions = {
@@ -12,7 +12,10 @@ function Loading() {
     },
   };
 
-  return <Lottie options={defaultOptions} height={50} width={50} />;
+  return;
+  <div className="w-100 h-100">
+    <Lottie animationData={animationData} />;
+  </div>;
 }
 
 export default Loading;
