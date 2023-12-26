@@ -1,13 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "@/public/igniteauth_logo.png";
+import Logo from "@/public/Logo.png";
 import {
   RectangleGroupIcon,
   ViewfinderCircleIcon,
   ShoppingCartIcon,
   PaperClipIcon,
-  ArrowLeftIcon,
+  ChevronDoubleLeftIcon,
   CommandLineIcon,
   CodeBracketSquareIcon,
 } from "@heroicons/react/24/outline";
@@ -30,17 +30,11 @@ function Sidebar({ Active }) {
           }`}
         >
           <Link href="/user">
-            <Image
-              className={``}
-              src={Logo}
-              width={50}
-              height={50}
-              alt="logo"
-            />
+            <Image className={``} src={Logo} width={150} alt="logo" />
           </Link>
-          <h1 className={`font-semibold ${isCollapsed ? "hidden" : "block"}`}>
+          {/* <h1 className={`font-semibold ${isCollapsed ? "hidden" : "block"}`}>
             Ignite Auth
-          </h1>
+          </h1> */}
         </div>
         <div
           onClick={() => setIsCollapsed(!isCollapsed)}
@@ -51,7 +45,7 @@ function Sidebar({ Active }) {
               <Image className="" src={Logo} alt="logo" />
             </div>
           ) : (
-            <ArrowLeftIcon className="w-6 h-6" />
+            <ChevronDoubleLeftIcon className="hover:text-my_light text-gray-400 w-6 h-6" />
           )}
         </div>
       </div>
