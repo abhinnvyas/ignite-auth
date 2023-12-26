@@ -17,6 +17,7 @@ function BarChart() {
         "Sunday",
       ],
     },
+
     yaxis: {
       max: 10, // Set the maximum value on the y-axis
       min: 0, // Set the minimum value on the y-axis

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "@/public/Logo.png";
+import Logo2 from "@/public/Logo2.png";
 import {
   RectangleGroupIcon,
   ViewfinderCircleIcon,
@@ -42,7 +43,11 @@ function Sidebar({ Active }) {
         >
           {isCollapsed ? (
             <div className="w-10 h-10 ">
-              <Image className="" src={Logo} alt="logo" />
+              <Image
+                className="max-w-full max-h-full object-contain"
+                src={Logo2}
+                alt="logo"
+              />
             </div>
           ) : (
             <ChevronDoubleLeftIcon className="hover:text-my_light text-gray-400 w-6 h-6" />
