@@ -1,9 +1,18 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { KeyIcon, ClipboardIcon } from "@heroicons/react/24/outline";
+import { getApiKey } from "@/app/api/api_credentials/getApiKey";
+import Cookies from "js-cookie";
 
 function Section2() {
   const [ApiKey, setApiKey] = useState("random-api-key");
+  useEffect(() => {
+    const clientId = Cookies.get("ClientId");
+    const token = Cookies.get("token");
+    getApiKey(clientId, token).then((res) => {
+      console.log(res);
+    });
+  }, []);
   return (
     <div className="flex w-full items-center space-x-4 border-2 p-2 rounded-lg">
       <div className="w-40 p-4 border-r-2">
