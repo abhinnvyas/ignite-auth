@@ -1,14 +1,13 @@
+import Section1 from "@/components/Buy Credits/Section1";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import React from "react";
 
 function pages() {
   return (
-    <div className="flex">
-      <div>
-        <Sidebar Active={"buycredits"} />
-      </div>
-      <main>
-        <div>Buy Credits</div>
+    <div className="flex space-x-4 w-full">
+      <Sidebar Active={"buycredits"} />
+      <main className="w-full px-4 h-screen overflow-y-scroll">
+        <Section1 />
       </main>
     </div>
   );
