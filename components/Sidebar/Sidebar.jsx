@@ -8,7 +8,7 @@ import {
   ViewfinderCircleIcon,
   ShoppingCartIcon,
   PaperClipIcon,
-  ChevronDoubleLeftIcon,
+  ChevronLeftIcon,
   CommandLineIcon,
   CodeBracketSquareIcon,
 } from "@heroicons/react/24/outline";
@@ -39,7 +39,7 @@ function Sidebar({ Active }) {
         </div>
         <div
           onClick={() => setIsCollapsed(!isCollapsed)}
-          className="p-2 cursor-pointer hover:bg-gray-100 rounded-lg transition-all ease-in-out"
+          className="p-2 cursor-pointer hover:bg-gray-100 rounded-lg transition-all ease-in-out hover:text-my_light"
         >
           {isCollapsed ? (
             <div className="w-10 h-10 ">
@@ -50,7 +50,7 @@ function Sidebar({ Active }) {
               />
             </div>
           ) : (
-            <ChevronDoubleLeftIcon className="hover:text-my_light text-gray-400 w-6 h-6" />
+            <ChevronLeftIcon className=" text-my_light w-6 h-6" />
           )}
         </div>
       </div>

@@ -13,7 +13,13 @@ function Page() {
       <div className="flex items-center justify-between px-5 h-18 border-b-2 p-2">
         <div className="flex items-center space-x-1">
           <Link href="/">
-            <Image className="" src={Logo} width={100} alt="logo" />
+            <Image
+              className=""
+              src={Logo}
+              width={150}
+              objectFit="contain"
+              alt="logo"
+            />
           </Link>
           {/* <h1 className="font-bold">Ignite Auth</h1> */}
         </div>
