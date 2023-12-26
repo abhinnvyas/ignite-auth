@@ -5,6 +5,8 @@ import Form from "@/components/LoginPage/Form";
 import Logo from "@/public/Logo.png";
 import { QuestionMarkCircleIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import Lottie from "lottie-react";
+import animationData from "@/public/Animation2.json";
 
 function Page() {
   return (
@@ -36,8 +38,8 @@ function Page() {
 
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between lg:space-x-10 mx-10 h-">
         <div className="max-w-2xl flex-1 text-center mx-auto mb-20">
-          <div className="border flex flex-1 mt-10 p-3">
-            <h1>Add your Image here</h1>
+          <div className="hidden  md:flex items-center justify-around flex-1  p-3">
+            {/* <h1>Add your Image here</h1>
             <Image
               className=""
               src=""
@@ -45,7 +47,13 @@ function Page() {
               height={100}
               objectFit="cover"
               alt="Add your Image here"
-            ></Image>
+            ></Image> */}
+            <Lottie
+              color="#2F855A"
+              width={100}
+              height={100}
+              animationData={animationData}
+            />
           </div>
           <p className="w-xxl-65 w-100 mx-auto">
             Accept payments from your customers through our easy-to-use QR code

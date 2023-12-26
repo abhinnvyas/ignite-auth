@@ -1,9 +1,12 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import Lottie from "lottie-react";
+import animationData from "@/public/Animation2.json";
 function Section1() {
   return (
     <div>
-      <div className="max-w-screen-xl flex items-center mx-auto flex-col lg:flex-row pt-4 pb-20 px-4 sm:px-8 md:px-4 xl:px-0 h-screen">
+      <div className="max-w-screen-xl flex items-center mx-auto flex-col lg:flex-row pt-4 pb-20 px-4 sm:px-8 md:px-4 xl:px-0 h-screen ">
         <div className="flex flex-col justify-center text-left space-y-3 lg:max-w-md">
           <div className={`text-my_primary`}>
             <h1 className="text-3xl lg:text-4xl font-semibold leading-normal lg:leading-normal ">
@@ -37,8 +40,8 @@ function Section1() {
             Start Accepting Payments
           </a>
         </div>
-        <div className="border flex flex-1 mt-10 p-3">
-          <h1>Add your Image here</h1>
+        <div className="hidden md:flex items-center justify-around flex-1 mt-10 p-3 ">
+          {/* <h1>Add your Image here</h1>
           <Image
             className=""
             src=""
@@ -46,7 +49,13 @@ function Section1() {
             height={100}
             objectFit="cover"
             alt="Add your Image here"
-          ></Image>
+          ></Image> */}
+          <Lottie
+            color="#2F855A"
+            width={100}
+            height={100}
+            animationData={animationData}
+          />
         </div>
       </div>
     </div>
