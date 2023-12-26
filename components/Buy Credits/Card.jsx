@@ -7,7 +7,7 @@ import {
 
 function Card() {
   return (
-    <div className="flex flex-col space-y-3 items-center justify-center border-2 rounded-lg">
+    <div className="flex flex-col space-y-3 items-center justify-center border-2 rounded-lg flex-1">
       <h1 className="text-xl font-bold mt-5">Starter</h1>
       <CheckBadgeIcon className="text-my_secondary w-8 h-8" />
       <h1 className="text-3xl">₹ 499</h1>
