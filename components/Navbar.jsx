@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "@/public/igniteauth_logo.png";
+import Logo from "@/public/Logo.png";
 import Image from "next/image";
 import Link from "next/link";
 function Navbar() {
@@ -8,11 +8,11 @@ function Navbar() {
     <div
       className={`sticky top-0 z-50 flex items-center justify-between p-2   shadow-md bg-my_background`}
     >
-      <div className="flex items-center space-x-1">
-        <Link href="/">
-          <Image src={Logo} width={40} height={40} alt="logo" />
+      <div className="flex items-center justify-center space-x-1">
+        <Link className=" pt-2 pl-2" href="/">
+          <Image src={Logo} width={150} alt="logo" />
         </Link>
-        <h1 className="font-bold">Ignite Auth</h1>
+        {/* <h1 className="font-bold">Ignite Auth</h1> */}
       </div>
 
       <div className="hidden lg:block text-sm font-semibold ">
