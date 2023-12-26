@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Form from "@/components/LoginPage/Form";
-import Logo from "@/public/igniteauth_logo.png";
+import Logo from "@/public/Logo.png";
 import { QuestionMarkCircleIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
@@ -13,9 +13,9 @@ function Page() {
       <div className="flex items-center justify-between px-5 h-18 border-b-2 p-2">
         <div className="flex items-center space-x-1">
           <Link href="/">
-            <Image className="" src={Logo} width={40} height={40} alt="logo" />
+            <Image className="" src={Logo} width={100} alt="logo" />
           </Link>
-          <h1 className="font-bold">Ignite Auth</h1>
+          {/* <h1 className="font-bold">Ignite Auth</h1> */}
         </div>
         <div
           className={`flex items-center px-2 py-1 bg-white text-my_light border-my_light hover:cursor-pointer hover:shadow-md border-2 rounded-lg
