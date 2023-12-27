@@ -1,7 +1,7 @@
 import Section1 from "@/components/Buy Credits/Section1";
 import Section2 from "@/components/Buy Credits/Section2";
 import Sidebar from "@/components/Sidebar/Sidebar";
-import React, { useEffect } from "react";
+import React from "react";
 
 function pages() {
   return (

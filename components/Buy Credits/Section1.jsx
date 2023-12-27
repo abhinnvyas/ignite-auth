@@ -2,7 +2,7 @@ import React from "react";
 
 function Section1() {
   return (
-    <div className={`text-my_primary  p-4  mt-5 `}>
+    <div className={`text-my_primary  p-4  mt-5 border-b`}>
       <h1 className="text-lg md:text-2xl lg:text-4xl font-semibold">
         Choose a plan
       </h1>

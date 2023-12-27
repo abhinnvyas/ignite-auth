@@ -1,5 +1,5 @@
 import axios from "axios";
-import { BASE_URL } from "../../api.config";
+import { BASE_URL } from "../api.config";
 
 export async function buyCredits(clientid, token, credits) {
   try {
