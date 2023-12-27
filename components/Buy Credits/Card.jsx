@@ -4,6 +4,8 @@ import {
   CheckBadgeIcon,
   CheckIcon,
   NoSymbolIcon,
+  PlusIcon,
+  MinusIcon,
 } from "@heroicons/react/24/outline";
 import { buyCredits } from "@/app/api/buyCredits";
 import Cookies from "js-cookie";
@@ -15,6 +17,7 @@ function Card() {
   const [Credits, setCredits] = useState("1000");
   const [OrderID, setOrderID] = useState("");
   const [Amount, setAmount] = useState("100");
+  const [Step, setStep] = useState(1000);
   const router = useRouter();
 
   useEffect(() => {
@@ -62,16 +65,41 @@ function Card() {
       });
   };
 
+  const increment = () => {
+    setCredits(parseInt(Credits) + Step);
+  };
+  const decrement = () => {
+    if (Credits != 1000) setCredits(parseInt(Credits) - Step);
+  };
+
   return (
-    <div className="flex flex-col  items-start justify-center">
+    <div className="max-w-lg flex flex-col  items-start justify-center">
       <Script src="https://sandbox-payments.open.money/layer" />
       <h1 className="text-lg mb-2">How many credits do you want?*</h1>
-      <input
-        className="w-full p-2 border-2 rounded-lg border-gray-200 outline-none hover:border-gray-600 focus:border-green-600 "
-        onChange={(e) => setCredits(e.target.value)}
-        placeholder=""
-        value={Credits}
-      />
+      <div className="flex w-full space-x-2">
+        <input
+          disabled
+          type="number"
+          className="w-full p-2 border-2  rounded-lg border-gray-200 outline-none hover:border-gray-600 focus:border-green-600 cursor-not-allowed"
+          onChange={(e) => setCredits(e.target.value)}
+          placeholder=""
+          value={Credits}
+        />
+        <div className="w-fit flex space-x-1">
+          <div
+            onClick={increment}
+            className="p-2 rounded-lg bg-my_secondary hover:bg-my_secondary_dark hover:cursor-pointer"
+          >
+            <PlusIcon className="w-6 h-6  text-white" />
+          </div>
+          <div
+            onClick={decrement}
+            className="p-2 rounded-lg bg-red-500 hover:bg-red-600 hover:cursor-pointer"
+          >
+            <MinusIcon className="w-6 h-6  text-white" />
+          </div>
+        </div>
+      </div>
       <button
         onClick={onClick}
         className="w-full bg-my_secondary p-2 rounded-lg text-xl font-semibold text-white mt-2 hover:bg-my_secondary_dark transition-all ease-in-out"
