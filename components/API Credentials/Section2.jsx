@@ -44,12 +44,12 @@ function Section2() {
         <h1 className="font-normal text-xl mb-2">Key</h1>
         <div className="flex space-x-4 items-center  ">
           <input
-            className="bg-my_extra_light w-fit h-12 p-2 text-lg text-my_light rounded-lg opacity-80 border-2 border-gray-400 px-4 flex-1 max-w-lg cursor-not-allowed "
+            className="bg-my_extra_light w-fit h-12 p-2 text-lg text-my_light rounded-lg opacity-80 border-2 border-gray-400 px-4 flex-1 max-w-lg cursor-not-allowed"
             type="text"
             placeholder
             value={ApiKey}
             disabled
-            onCopy={() => {}}
+            style={{ userSelect: "none", pointerEvents: "none" }}
           />
           <button
             onClick={regeneratekey}
