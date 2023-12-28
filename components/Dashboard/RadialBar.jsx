@@ -10,11 +10,42 @@ function RadialBar({ UsedTxns }) {
     series: [50],
     labels: ["Transactions Used"],
     colors: ["#2F855A"],
+    stroke: {
+      lineCap: "round",
+    },
+    plotOptions: {
+      radialBar: {
+        hollow: {
+          margin: 15,
+          size: "70%",
+        },
+
+        dataLabels: {
+          showOn: "always",
+          name: {
+            offsetY: -10,
+            show: true,
+            color: "#888",
+            fontSize: "13px",
+          },
+          value: {
+            color: "#111",
+            fontSize: "30px",
+            show: true,
+          },
+        },
+      },
+    },
   };
 
   return (
     <div className="">
-      <Chart options={options} series={options.series} type="radialBar" />
+      <Chart
+        options={options}
+        series={options.series}
+        height={350}
+        type="radialBar"
+      />
     </div>
   );
 }

@@ -11,8 +11,8 @@ function Page() {
       <Sidebar Active={"dashboard"} />
       <main className="w-full px-4 h-screen overflow-y-scroll">
         <Section1 />
-        <Section2 />
         <Section3 />
+        <Section2 />
         <Section4 />
       </main>
     </div>
