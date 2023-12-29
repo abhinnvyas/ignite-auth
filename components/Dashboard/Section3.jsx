@@ -7,22 +7,22 @@ function Section3() {
         <div className="flex flex-1    items-center space-x-4 p-4 border-2 rounded-lg justify-start lg:justify-center">
           <div className={`w-12 h-12 rounded-full bg-my_secondary`}></div>
           <div className="flex flex-col justify-start ">
-            <h1 className={`text-my_primary`}>₹ 0</h1>
-            <p className={`text-my_light`}>Today Receive Amount</p>
+            <h1 className={`text-my_primary`}>0</h1>
+            <p className={`text-my_light`}>OTP Sent Today </p>
           </div>
         </div>
         <div className="flex flex-1  items-center space-x-4 p-4 border-2 rounded-lg justify-start lg:justify-center">
           <div className={`w-12 h-12 rounded-full bg-my_secondary`}></div>
           <div className="flex flex-col justify-start ">
             <h1 className={`text-my_primary`}>0</h1>
-            <p className={`text-my_light`}>Today Success Transaction</p>
+            <p className={`text-my_light`}>Total Verified OTP</p>
           </div>
         </div>
         <div className="flex flex-1  items-center space-x-4 p-4 border-2 rounded-lg justify-start lg:justify-center">
           <div className={`w-12 h-12 rounded-full bg-my_secondary`}></div>
           <div className="flex flex-col justify-start ">
             <h1 className={`text-my_primary`}>0</h1>
-            <p className={`text-my_light`}>Today Pending Transaction</p>
+            <p className={`text-my_light`}>Total Unverfied OTP</p>
           </div>
         </div>
       </div>
