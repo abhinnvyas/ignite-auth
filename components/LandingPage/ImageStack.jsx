@@ -24,6 +24,9 @@ const ImageStack = ({ images }) => {
             index === currentIndex ? "opacity-100" : "opacity-0"
           }`}
           style={{
+            border:"1px solid #2F855A",
+            padding:"10px",
+            borderRadius : "10px",
             width: "150%",
             height: "100%",
             objectFit: "contain",

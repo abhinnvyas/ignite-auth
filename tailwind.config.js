@@ -24,7 +24,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ["Lato", ...defaultTheme.fontFamily.sans],
+      sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
     },
   },
   plugins: [],
