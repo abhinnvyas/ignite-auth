@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "@/public/igniteauth_logo.png";
+import Logo from "@/public/Logo.png";
 import Image from "next/image";
 
 function Section7() {
@@ -14,7 +14,7 @@ function Section7() {
             href=""
           >
             <div className="flex justify-start items-center text-left space-x-2 ">
-              <Image src={Logo} width={40} height={40} alt="logo" />
+              <Image src={Logo} objectFit="contain" width={100} alt="logo" />
               <h1 className="font-bold">Ignite Auth</h1>
             </div>
           </a>

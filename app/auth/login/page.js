@@ -13,12 +13,12 @@ function Page() {
     <div className="min-h-screen ">
       {/* <Navbar /> */}
       <div className="flex items-center justify-between px-5 h-18 border-b-2 p-2">
-        <div className="flex items-center space-x-1">
+        <div className="flex items-center space-x-1 px-2">
           <Link href="/">
             <Image
               className=""
               src={Logo}
-              width={150}
+              width={100}
               objectFit="contain"
               alt="logo"
             />

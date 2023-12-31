@@ -8,9 +8,9 @@ function Navbar() {
     <div
       className={`sticky top-0 z-50 flex items-center justify-between p-2   shadow-md bg-my_background`}
     >
-      <div className="flex items-center justify-center space-x-1">
+      <div className="flex items-center justify-center space-x-1 px-2">
         <Link className="" href="/">
-          <Image objectFit="contain" src={Logo} width={150} alt="logo" />
+          <Image objectFit="contain" src={Logo} width={100} alt="logo" />
         </Link>
         {/* <h1 className="font-bold">Ignite Auth</h1> */}
       </div>
