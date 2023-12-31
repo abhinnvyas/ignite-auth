@@ -24,7 +24,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+      sans: ["Raleway", ...defaultTheme.fontFamily.sans],
     },
   },
   plugins: [],

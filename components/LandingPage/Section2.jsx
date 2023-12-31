@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import Lottie from "lottie-react";
 import animationData from "@/public/Lottie Files/2.json";
 import image1 from "@/public/Landing Page/Section2/1.png";
@@ -10,6 +10,16 @@ import image4 from "@/public/Landing Page/Section2/4.png";
 import ImageStack from "./ImageStack";
 
 function Section2() {
+  const [boldIndex, setBoldIndex] = React.useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBoldIndex((prevIndex) => (prevIndex + 1) % 4);
+    }
+      , 3000); // Change the interval time (in milliseconds) as needed
+
+    return () => clearInterval(interval);
+  }, []);
   const images = [image1, image2, image3, image4];
   return (
     <div>
@@ -50,6 +60,9 @@ function Section2() {
               </div>
               <div>
                 <h2
+                  style={{
+                    fontWeight: boldIndex === 0 ? "bold" : "normal",
+                  }}
                   className={`mb-2 text-lg font-normal text-my_primary transition-all`}
                 >
                   User Request - User initiates an OTP request through your
@@ -69,6 +82,9 @@ function Section2() {
               </div>
               <div>
                 <h2
+                  style={{
+                    fontWeight: boldIndex === 1 ? "bold" : "normal",
+                  }}
                   className={`mb-2 text-lg font-normal text-my_primary transition-all`}
                 >
                   IgniteAuth API Call - Your application communicates with
@@ -89,6 +105,9 @@ function Section2() {
               </div>
               <div>
                 <h2
+                  style={{
+                    fontWeight: boldIndex === 2 ? "bold" : "normal",
+                  }}
                   className={`mb-2 text-lg font-normal text-my_primary transition-all`}
                 >
                   OTP Delivery and User Verification - IgniteAuth generates a
@@ -109,6 +128,9 @@ function Section2() {
               </div>
               <div>
                 <h2
+                  style={{
+                    fontWeight: boldIndex === 3 ? "bold" : "normal",
+                  }}
                   className={`mb-2 text-lg font-normal text-my_primary transition-all`}
                 >
                   Verification and Access - Your application sends a

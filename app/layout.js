@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        style={{ fontFamily: "Montserrat" }}
+        style={{ fontFamily: "Raleway" }}
         className={` bg-my_background text-my_primary 
        ${inter.className}`}
       >

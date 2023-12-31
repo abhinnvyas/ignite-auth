@@ -21,8 +21,7 @@ function Section7() {
           <p
             className={`w-100 mt-5 text-base text-gray-500 transition duration-500 ease-in-out transform rounded-sm ring-offset-current ring-offset-2 mr-8 `}
           >
-            Accept payments from your customers through our easy-to-use Dynamic
-            QR code service, with 0% transaction fees.
+            Authenticate your users and their activities with Ignite Auth's OTP Services 
           </p>
         </div>
         <div className="flex flex-wrap flex-grow mt-8 -mb-10 text-left md:mt-0 lg:grid gap-8 grid-cols-1 md:grid-cols-2 col-span-2">
@@ -43,7 +42,7 @@ function Section7() {
                   className={`font-medium text-left text-md text-primary hover:text-primary_dark hover:underline text-my_secondary`}
                   href=""
                 >
-                  support@Ignite Auth.com
+                  support@ignitionnestlabs.online
                 </a>
               </li>
             </ul>
@@ -87,10 +86,7 @@ function Section7() {
       <div className="w-full mt-4 rounded-b-lg bg-gray-100">
         <div className="max-w-screen-xl flex flex-col flex-wrap mx-auto items-start md:flex-row md:flex-no-wrap py-5 px-4 sm:px-8 md:px-4 xl:px-0">
           <p className="text-xs text-start text-black sm:text-left">
-            *Ignite Auth provides Dynamic QR Generating service. Ignite Auth
-            does not offer payment gateway service, nor does it provide UPI ID
-            and UPI Merchant account. Please read our policy and T&C before
-            using our services.
+            *Ignite Auth provides OTP based authentication system for your application. It is not a messaging service.
           </p>
         </div>
       </div>

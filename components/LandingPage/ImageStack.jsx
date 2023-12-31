@@ -26,7 +26,6 @@ const ImageStack = ({ images }) => {
           style={{
             border:"1px solid #2F855A",
             padding:"10px",
-            borderRadius : "10px",
             width: "150%",
             height: "100%",
             objectFit: "contain",

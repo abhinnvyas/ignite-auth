@@ -7,10 +7,10 @@ function Section6() {
       >
         <div className="flex-col flex justify-center items-start">
           <div className="mb-1 lg:mb-2 font-medium text-left text-2xl lg:text-3xl ">
-            Start accepting error-free payments from your customers with
+            Start Authenticating Your Users and their Activities with
           </div>
           <div className="mb-4 text-xl md:mb-0 font-medium text-left">
-            Ignite Auth's Dynamic QR.
+            Ignite Auth's OTP Service
           </div>
         </div>
         <a
