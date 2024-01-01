@@ -146,8 +146,8 @@ function Form() {
 
           <button
             className={`${
-              IsLoading ? "bg-green-200" : "bg-my_secondary "
-            } w-full p-2 mt-4 bg-my_secondary  rounded-lg text-white hover:cursor-pointer shadow-md hover:shadow-lg transition-all ease-in-out active:scale-95 flex items-center justify-center h-10`}
+              IsLoading ? "bg-green-200" : "bg-my_secondary"
+            } w-full p-2 mt-4   rounded-lg text-white hover:cursor-pointer shadow-md hover:shadow-lg transition-all ease-in-out active:scale-95 flex items-center justify-center h-10`}
             type="submit"
           >
             {IsLoading ? (
