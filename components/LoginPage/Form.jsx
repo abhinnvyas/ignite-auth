@@ -41,29 +41,29 @@ function Form() {
     setIsLoading(true);
     !IsSignUpFlag
       ? verifyOTP(PhoneNumber, OTP, VerficationID, AppName)
-        .then((res) => {
-          console.log(res);
-          Cookies.set("ClientId", res.ClientId, { expires: 7, secure: true });
-          Cookies.set("token", res.token, { expires: 7, secure: true });
-          router.push("/user");
-          setIsLoading(false);
-        })
-        .catch((err) => {
-          alert("OTP has Expired!");
-          console.log(err);
-        })
+          .then((res) => {
+            console.log(res);
+            Cookies.set("ClientId", res.ClientId, { expires: 7, secure: true });
+            Cookies.set("token", res.token, { expires: 7, secure: true });
+            router.push("/user");
+            setIsLoading(false);
+          })
+          .catch((err) => {
+            alert("OTP has Expired!");
+            console.log(err);
+          })
       : verifyOTPSignUp(PhoneNumber, OTP, VerficationID, AppName)
-        .then((res) => {
-          console.log(res);
-          Cookies.set("ClientId", res.ClientId, { expires: 7, secure: true });
-          Cookies.set("token", res.token, { expires: 7, secure: true });
-          router.push("/user");
-          setIsLoading(false);
-        })
-        .catch((err) => {
-          alert("OTP has Expired!");
-          console.log(err);
-        });
+          .then((res) => {
+            console.log(res);
+            Cookies.set("ClientId", res.ClientId, { expires: 7, secure: true });
+            Cookies.set("token", res.token, { expires: 7, secure: true });
+            router.push("/user");
+            setIsLoading(false);
+          })
+          .catch((err) => {
+            alert("OTP has Expired!");
+            console.log(err);
+          });
   };
 
   return (
@@ -78,10 +78,11 @@ function Form() {
       {Flag ? (
         <form name="Verify OTP" onSubmit={handleSubmitVerifyOTP}>
           <div className="flex flex-col justify-center space-y-2 mt-8">
-            <label className={`text-my_light font-semibold`}>OTP Sent On Your Mobile Number: </label>
+            <label className={`text-my_light font-semibold`}>
+              OTP Sent On Your Mobile Number:{" "}
+            </label>
             <input
               className="w-full p-4 font-semibold border-2 rounded-lg border-gray-200 outline-none hover:border-gray-600 focus:border-green-600"
-
               onChange={(e) => setOTP(e.target.value)}
               type="text"
               value={OTP}
@@ -122,18 +123,18 @@ function Form() {
             />
           </div>
           <div className="flex flex-col justify-center space-y-2 mt-8">
-            <label className={`text-my_light font-semibold`}>Phone Number:</label>
+            <label className={`text-my_light font-semibold`}>
+              Phone Number:
+            </label>
             <input
               maxLength={10}
-
               className="w-full p-4 font-semibold border-2 rounded-lg border-gray-200 outline-none hover:border-gray-600 focus:border-green-600"
               onChange={(e) => {
                 // apply regex to allow only numbers
                 const regex = /^[0-9\b]+$/;
-                if (e.target.value === '' || regex.test(e.target.value)) {
-                  setPhoneNumber(e.target.value)
+                if (e.target.value === "" || regex.test(e.target.value)) {
+                  setPhoneNumber(e.target.value);
                 }
-
               }}
               type="tel"
               pattern="[0-9]{10}"
@@ -142,7 +143,6 @@ function Form() {
               required
             />
           </div>
-
 
           <button
             className={`${
