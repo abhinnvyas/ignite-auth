@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "@/public/Logo.png";
 import Image from "next/image";
+import Link from "next/link";
 
 function Section7() {
   return (
@@ -21,7 +22,8 @@ function Section7() {
           <p
             className={`w-100 mt-5 text-base text-gray-500 transition duration-500 ease-in-out transform rounded-sm ring-offset-current ring-offset-2 mr-8 `}
           >
-            Authenticate your users and their activities with Ignite Auth's OTP Services 
+            Authenticate your users and their activities with Ignite Auth's OTP
+            Services
           </p>
         </div>
         <div className="flex flex-wrap flex-grow mt-8 -mb-10 text-left md:mt-0 lg:grid gap-8 grid-cols-1 md:grid-cols-2 col-span-2">
@@ -86,15 +88,21 @@ function Section7() {
       <div className="w-full mt-4 rounded-b-lg bg-gray-100">
         <div className="max-w-screen-xl flex flex-col flex-wrap mx-auto items-start md:flex-row md:flex-no-wrap py-5 px-4 sm:px-8 md:px-4 xl:px-0">
           <p className="text-xs text-start text-black sm:text-left">
-            *Ignite Auth provides OTP based authentication system for your application. It is not a messaging service.
+            *Ignite Auth provides OTP based authentication system for your
+            application. It is not a messaging service.
           </p>
         </div>
       </div>
       <div className="w-full rounded-b-lg bg-gray-200">
-        <div className="max-w-screen-xl flex flex-col flex-wrap mx-auto items-start md:flex-row md:flex-no-wrap py-5 px-4 sm:px-8 md:px-4 lg:px-5">
+        <div className="max-w-screen-xl flex flex-col flex-wrap mx-auto items-start md:flex-row md:flex-no-wrap py-5 px-4 sm:px-8 md:px-4 lg:px-5 justify-between">
           <p className="text-sm text-start  text-black sm:text-left">
             © Ignite Auth 2020-23, All Rights Reserved.
           </p>
+          <Link href="/policy">
+            <p className="hover:underline transition-all ease-in-out">
+              Privacy Policy
+            </p>
+          </Link>
         </div>
       </div>
     </footer>
