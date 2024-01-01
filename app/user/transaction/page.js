@@ -4,11 +4,12 @@ import React from "react";
 function page() {
   return (
     <div className="flex">
+      <title>Authentications | Ignite Auth</title>
       <div>
         <Sidebar Active={"transaction"} />
       </div>
       <main>
-        <div>Transaction</div>
+        <div>Authentications</div>
       </main>
     </div>
   );

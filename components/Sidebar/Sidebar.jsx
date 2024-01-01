@@ -18,24 +18,37 @@ import Link from "next/link";
 function Sidebar({ Active }) {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
+  const sidebarStyles = {
+    maxWidth: isCollapsed ? "60px" : "300px",
+    transition: "max-width 0.3s ease-in-out",
+  };
+
   return (
     <div
-      className={`text-my_primary bg-my_background shadow-2xl p-2 sticky left-0  max-w-xs h-screen transition-all ease-in-out`}
+      style={Object.assign({}, sidebarStyles, {
+        textMyPrimary: true,
+        bgMyBackground: true,
+        shadow2xl: true,
+        p2: true,
+        sticky: true,
+        left0: true,
+        maxWs: true,
+        hScreen: true,
+        transitionAll: true,
+        easeInOut: true,
+      })}
     >
       <div
-        className={`flex items-center ${isCollapsed ? "" : "space-x-4 p-2"}`}
+        className={`flex items-center ${isCollapsed ? "" : "space-x-10 p-2"
+          }`}
       >
         <div
-          className={`flex items-center space-x-2 text-lg w-full ${
-            isCollapsed ? "hidden" : "block"
-          }`}
+          className={`flex items-center space-x-2 text-lg w-full ${isCollapsed ? "hidden" : "block"
+            }`}
         >
           <Link href="/user">
             <Image className={``} src={Logo} width={150} alt="logo" />
           </Link>
-          {/* <h1 className={`font-semibold ${isCollapsed ? "hidden" : "block"}`}>
-            Ignite Auth
-          </h1> */}
         </div>
         <div
           onClick={() => setIsCollapsed(!isCollapsed)}
@@ -56,7 +69,7 @@ function Sidebar({ Active }) {
       </div>
 
       <div className={`mt-5`}>
-        <div className="flex flex-col space-y-2 justify-center ">
+        <div className="flex flex-col space-y-8 justify-center ">
           <MenuItem
             isCollapsed={isCollapsed}
             ActiveTab={Active}

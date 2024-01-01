@@ -8,6 +8,7 @@ import Section4 from "@/components/Dashboard/Section4";
 function Page() {
   return (
     <div className="flex space-x-4 w-full">
+      <title>Dashboard | Ignite Auth</title>
       <Sidebar Active={"dashboard"} />
       <main className="w-full px-4 h-screen overflow-y-scroll">
         <Section1 />

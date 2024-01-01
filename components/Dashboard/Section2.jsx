@@ -18,7 +18,7 @@ function Section2() {
             <BarChart />
           </div>
         </div>
-        <div className="border-2 p-4 lg:w-1/3 rounded-lg ">
+        <div className="border-2 p-4 lg:w-1/4 rounded-lg ">
           <h1 className="border-b-2">QR Transactions Statistics</h1>
           <div className="w-full">
             <RadialBar UsedTxns={UsedTxns} />

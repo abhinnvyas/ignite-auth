@@ -11,6 +11,9 @@ function page() {
         <main className="w-full px-4 h-screen overflow-y-scroll">
           <Section1 />
           <Section2 />
+          <div>
+
+          </div>
         </main>
       </div>
     </div>

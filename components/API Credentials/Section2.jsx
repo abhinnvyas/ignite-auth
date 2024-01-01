@@ -55,7 +55,7 @@ function Section2() {
             onClick={regeneratekey}
             className=" bg-my_secondary text-white text-lg px-4 rounded-lg hover:shadow-lg transition-all ease-in-out p-2"
           >
-            Change Credentials
+           Regenerate API Key
           </button>
           <button
             onClick={handleCopyClick}

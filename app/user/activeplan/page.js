@@ -6,6 +6,7 @@ import React from "react";
 function page() {
   return (
     <div className="flex space-x-4 w-full ">
+      <title>Active Plan | Ignite Auth</title>
       <div>
         <Sidebar Active={"activeplan"} />
       </div>
