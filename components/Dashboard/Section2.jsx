@@ -6,7 +6,7 @@ import dynamic from "next/dynamic";
 const BarChart = dynamic(() => import("./BarChart"), { ssr: false });
 const RadialBar = dynamic(() => import("./RadialBar"), { ssr: false });
 
-function Section2() {
+function Section2({ WeeklyAnalysis }) {
   const [TotalTxns, setTotalTxns] = useState(100);
   const [UsedTxns, setUsedTxns] = useState(50);
   return (
@@ -15,7 +15,7 @@ function Section2() {
         <div className="border-2 p-4  rounded-lg flex-1">
           <h1 className="border-b-2">Last 10 Days Statistics</h1>
           <div className="w-full">
-            <BarChart />
+            <BarChart WeeklyAnalysis={WeeklyAnalysis} />
           </div>
         </div>
         <div className="border-2 p-4 lg:w-1/4 rounded-lg ">

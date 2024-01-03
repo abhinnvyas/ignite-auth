@@ -1,25 +1,26 @@
 import React from "react";
 import Chart from "react-apexcharts";
 
-function BarChart() {
+function BarChart({ WeeklyAnalysis }) {
   const options = {
     chart: {
       id: "basic-bar",
     },
     xaxis: {
-      categories: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday",
-      ],
+      // categories: [
+      //   "Monday",
+      //   "Tuesday",
+      //   "Wednesday",
+      //   "Thursday",
+      //   "Friday",
+      //   "Saturday",
+      //   "Sunday",
+      // ],
+      categories: WeeklyAnalysis.map((item) => item.day),
     },
 
     yaxis: {
-      max: 10, // Set the maximum value on the y-axis
+      max: 100, // Set the maximum value on the y-axis
       min: 0, // Set the minimum value on the y-axis
     },
     colors: ["#2F855A"],
@@ -28,7 +29,8 @@ function BarChart() {
   const series = [
     {
       name: "Recieved Amount",
-      data: [1, 2, 3, 4, 5, 6, 7],
+      // data: [1, 2, 3, 4, 5, 6, 7],
+      data: WeeklyAnalysis.map((item) => item.otpSent),
     },
   ];
   return (
