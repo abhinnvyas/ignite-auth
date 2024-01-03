@@ -8,10 +8,10 @@ import Cookie from "js-cookie";
 import { useEffect } from "react";
 
 function Page() {
-  // useEffect(() => {
-  //   console.log(Cookie.get("ClientId"));
-  //   console.log(Cookie.get("token"));
-  // }, []);
+  useEffect(() => {
+    console.log(Cookie.get("ClientId"));
+    console.log(Cookie.get("token"));
+  }, []);
   return (
     <div className="flex space-x-4 w-full">
       <title>Dashboard | Ignite Auth</title>
