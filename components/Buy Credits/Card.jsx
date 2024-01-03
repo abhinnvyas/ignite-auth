@@ -73,10 +73,12 @@ function Card() {
   };
 
   return (
-    <div className="max-w-lg flex flex-col  items-start justify-center">
+    <div className=" flex-1 flex flex-col  items-start justify-center  ">
       <Script src="https://sandbox-payments.open.money/layer" />
-      <h1 className="text-lg mb-2">How many credits do you want?*</h1>
-      <div className="flex w-full space-x-2">
+      <h1 className="text-lg mb-4 font-semibold ">
+        How many credits do you want?*
+      </h1>
+      <div className="flex w-full space-x-4">
         <input
           disabled
           type="number"
@@ -85,7 +87,7 @@ function Card() {
           placeholder=""
           value={Credits}
         />
-        <div className="w-fit flex space-x-1">
+        <div className="w-fit flex space-x-1 ">
           <div
             onClick={increment}
             className="p-2 rounded-lg bg-my_secondary hover:bg-my_secondary_dark hover:cursor-pointer"
@@ -102,7 +104,7 @@ function Card() {
       </div>
       <button
         onClick={onClick}
-        className="w-full bg-my_secondary p-2 rounded-lg text-xl font-semibold text-white mt-2 hover:bg-my_secondary_dark transition-all ease-in-out"
+        className="w-full bg-my_secondary p-2 rounded-lg text-xl font-semibold text-white mt-4 hover:bg-my_secondary_dark transition-all ease-in-out "
       >
         Pay {Amount}
       </button>

@@ -4,8 +4,14 @@ import Section2 from "@/components/Dashboard/Section2";
 import Section1 from "@/components/Dashboard/Section1";
 import Section3 from "@/components/Dashboard/Section3";
 import Section4 from "@/components/Dashboard/Section4";
+import Cookie from "js-cookie";
+import { useEffect } from "react";
 
 function Page() {
+  // useEffect(() => {
+  //   console.log(Cookie.get("ClientId"));
+  //   console.log(Cookie.get("token"));
+  // }, []);
   return (
     <div className="flex space-x-4 w-full">
       <title>Dashboard | Ignite Auth</title>
