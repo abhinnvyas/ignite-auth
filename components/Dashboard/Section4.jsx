@@ -1,18 +1,22 @@
 import Link from "next/link";
 import React from "react";
 
-function Section4({ RecentActivity }) {
+function Section4({ RecentActivity, isDashboard }) {
   return (
     <div>
       <div className="flex flex-col border-2 rounded-lg  justify-left p-2 bg-white">
         <div className="p-2 flex justify-between">
           <h1 className="text-md font-semibold mb-2">Recent Activity</h1>
-          <Link
-            className="hover:underline cursor-pointer transition-all ease-in-out"
-            href="/user/transaction"
-          >
-            View all transactions
-          </Link>
+          {isDashboard ? (
+            <Link
+              className="hover:underline cursor-pointer transition-all ease-in-out"
+              href="/user/transaction"
+            >
+              View all transactions
+            </Link>
+          ) : (
+            <></>
+          )}
         </div>
         <div></div>
         <div className=" px-0 overflow-auto w-full">

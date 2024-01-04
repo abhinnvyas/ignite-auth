@@ -16,7 +16,6 @@ function Page() {
 
     getAnalytics(clientId, token).then((res) => {
       setResponse(res);
-      console.log(Response);
     });
   }, [Response]);
   return (
@@ -31,7 +30,10 @@ function Page() {
           totalUnverifiedOTP={Response?.otpUnverifiedToday}
         />
         <Section2 WeeklyAnalysis={Response?.weeklyAnalysis} />
-        <Section4 RecentActivity={Response?.recentActivity} />
+        <Section4
+          RecentActivity={Response?.recentActivity}
+          isDashboard={true}
+        />
       </main>
     </div>
   );
