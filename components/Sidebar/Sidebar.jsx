@@ -37,14 +37,17 @@ function Sidebar({ Active }) {
         transitionAll: true,
         easeInOut: true,
       })}
+      className={`border-r ${
+        isCollapsed ? "" : "px-2"
+      } transition-all ease-in-out `}
     >
       <div
-        className={`flex items-center ${isCollapsed ? "" : "space-x-10 p-2"
-          }`}
+        className={`flex items-center ${isCollapsed ? "" : "space-x-10 p-2"}`}
       >
         <div
-          className={`flex items-center space-x-2 text-lg w-full ${isCollapsed ? "hidden" : "block"
-            }`}
+          className={`flex items-center space-x-2 text-lg w-full ${
+            isCollapsed ? "hidden" : "block"
+          }`}
         >
           <Link href="/user">
             <Image className={``} src={Logo} width={150} alt="logo" />
