@@ -1,6 +1,6 @@
 import React from "react";
 
-function Section4() {
+function Section4({ RecentActivity }) {
   return (
     <div>
       <div className="flex flex-col border-2 rounded-lg  justify-left p-2 bg-white">
@@ -22,7 +22,7 @@ function Section4() {
                 </th>
                 <th className="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
                   <p className="block antialiased font-sans text-md text-blue-gray-900 font-normal leading-none opacity-70">
-                    Customer Name
+                    App Name
                   </p>
                 </th>
                 <th className="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
@@ -32,68 +32,74 @@ function Section4() {
                 </th>
                 <th className="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
                   <p className="block antialiased font-sans text-md text-blue-gray-900 font-normal leading-none opacity-70">
-                    Amount
+                    Phone Number
                   </p>
                 </th>
                 <th className="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
                   <p className="block antialiased font-sans text-md text-blue-gray-900 font-normal leading-none opacity-70">
-                    Status
+                    Verification Code
                   </p>
                 </th>
                 <th className="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4">
                   <p className="block antialiased font-sans text-md text-blue-gray-900 font-normal leading-none opacity-70">
-                    Date
+                    Attempts
                   </p>
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td className="p-4 border-b border-blue-gray-50">
-                  <div className="flex items-center gap-3">
-                    <p
-                      className={`block antialiased font-sans text-md leading-normal text-my_secondary `}
-                    >
-                      1
-                    </p>
-                  </div>
-                </td>
-                <td className="p-4 border-b border-blue-gray-50">
-                  <div className="flex items-center gap-3">
-                    <p className="block antialiased font-sans text-md leading-normal text-blue-gray-900 ">
-                      Test Name
-                    </p>
-                  </div>
-                </td>
-                <td className="p-4 border-b border-blue-gray-50">
-                  <div className="flex items-center gap-3">
-                    <p className="block antialiased font-sans text-md leading-normal text-blue-gray-900 ">
-                      000111
-                    </p>
-                  </div>
-                </td>
-                <td className="p-4 border-b border-blue-gray-50">
-                  <div className="flex items-center gap-3">
-                    <p className="block antialiased font-sans text-md leading-normal text-blue-gray-900 ">
-                      500$
-                    </p>
-                  </div>
-                </td>
-                <td className="p-4 border-b border-blue-gray-50">
-                  <div className="flex items-center gap-3">
-                    <p className="block antialiased font-sans text-md leading-normal text-blue-gray-900  bg-yellow-400 text-white p-2 rounded-lg">
-                      Created
-                    </p>
-                  </div>
-                </td>
-                <td className="p-4 border-b border-blue-gray-50">
-                  <div className="flex items-center gap-3">
-                    <p className="block antialiased font-sans text-md leading-normal text-blue-gray-900  ">
-                      29-11-2023 12:29 PM
-                    </p>
-                  </div>
-                </td>
-              </tr>
+              {RecentActivity.map((item, index) => (
+                <tr className="" key={index}>
+                  <td className="p-4 border-b border-blue-gray-50">
+                    <div className="flex items-center gap-3">
+                      <p
+                        className={`block antialiased font-sans text-md leading-normal text-my_secondary `}
+                      >
+                        {index + 1}
+                      </p>
+                    </div>
+                  </td>
+                  <td className="p-4 border-b border-blue-gray-50">
+                    <div className="flex items-center gap-3">
+                      <p className="block antialiased font-sans text-md leading-normal text-blue-gray-900 ">
+                        {item?.AppName}
+                      </p>
+                    </div>
+                  </td>
+                  <td className="p-4 border-b border-blue-gray-50">
+                    <div className="flex items-center gap-3">
+                      <p className="block antialiased font-sans text-md leading-normal text-blue-gray-900 ">
+                        {item?.ClientId}
+                      </p>
+                    </div>
+                  </td>
+                  <td className="p-4 border-b border-blue-gray-50">
+                    <div className="flex items-center gap-3">
+                      <p className="block antialiased font-sans text-md leading-normal text-blue-gray-900 ">
+                        {item?.PhoneNumber}
+                      </p>
+                    </div>
+                  </td>
+                  <td className="p-4 border-b border-blue-gray-50">
+                    <div className="flex items-center gap-3">
+                      <p
+                        className={`block antialiased font-sans text-md leading-normal text-blue-gray-900 ${
+                          item?.Verified ? "bg-my_secondary" : "bg-red-500"
+                        } text-white p-2 rounded-lg`}
+                      >
+                        {item?.Verified ? "Verified" : "Not Verified"}
+                      </p>
+                    </div>
+                  </td>
+                  <td className="p-4 border-b border-blue-gray-50">
+                    <div className="flex items-center gap-3">
+                      <p className="block antialiased font-sans text-md leading-normal text-blue-gray-900  ">
+                        {item?.Attempts}
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>

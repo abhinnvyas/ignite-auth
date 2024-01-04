@@ -31,7 +31,7 @@ function Page() {
           totalUnverifiedOTP={Response?.otpUnverifiedToday}
         />
         <Section2 WeeklyAnalysis={Response?.weeklyAnalysis} />
-        <Section4 />
+        <Section4 RecentActivity={Response?.recentActivity} />
       </main>
     </div>
   );
