@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import { getProfile } from "@/app/api/getProfile";
 import Link from "next/link";
+import Lottie from "lottie-react";
+import animationData from "@/public/Lottie Files/Credits.json";
 
 function Section2() {
   const [CreditsAvailable, setCreditsAvailable] = useState(0);
@@ -14,17 +16,24 @@ function Section2() {
     });
   }, []);
   return (
-    <div className="px-4 flex items-center  mt-5 ">
-      <div className="bg-my_secondary flex space-x-2 text-white font-semibold p-4 rounded-l-full">
-        <h1 className="text-xl">Credits Available: </h1>
-        <h1 className="text-xl">{CreditsAvailable}</h1>
+    <div className="flex items-center">
+      <div className=" p-4 px-4 flex flex-col space-y-2 justify-center items-start   ">
+        <div className=" flex space-x-4  items-center justify-center">
+          <h1 className="text-2xl font-semibold">Credits Available: </h1>
+          <h1 className="text-2xl bg-my_secondary text-white px-4 py-2 rounded-full">
+            {CreditsAvailable}
+          </h1>
+        </div>
+        <Link
+          href="/user/buycredits"
+          className="text-lg  font-semibold bg-my_secondary_dark px-8 py-2 shadow-lg text-white rounded-full hover:bg-my_secondary transition-all ease-in-out"
+        >
+          Buy More
+        </Link>
       </div>
-      <Link
-        href="/user/buycredits"
-        className="text-xl font-semibold bg-red-500 p-4 text-white rounded-r-full hover:bg-red-600 transition-all ease-in-out"
-      >
-        Buy More
-      </Link>
+      <div className="w-[200px]">
+        <Lottie animationData={animationData} width={100} height={100} />
+      </div>
     </div>
   );
 }
