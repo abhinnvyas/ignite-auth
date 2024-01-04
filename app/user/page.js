@@ -7,6 +7,7 @@ import Section4 from "@/components/Dashboard/Section4";
 import Cookies from "js-cookie";
 import { useEffect, useState } from "react";
 import { getAnalytics } from "../api/getAnalytics";
+import TopBar from "@/components/TopBar/TopBar";
 
 function Page() {
   const [Response, setResponse] = useState(null);
@@ -23,6 +24,7 @@ function Page() {
       <title>Dashboard | Ignite Auth</title>
       <Sidebar Active={"dashboard"} />
       <main className="w-full px-4 h-screen overflow-y-scroll">
+        <TopBar />
         <Section1 />
         <Section3
           otpSentToday={Response?.otpSentToday}
