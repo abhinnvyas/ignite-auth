@@ -19,19 +19,19 @@ function Section2({ WeeklyAnalysis }) {
           </div>
         </div>
         <div className="border-2 p-4 lg:w-1/4 rounded-lg ">
-          <h1 className="border-b-2">QR Transactions Statistics</h1>
+          <h1 className="border-b-2">Credits Analysis</h1>
           <div className="w-full">
             <RadialBar UsedTxns={UsedTxns} />
           </div>
           <div className="flex justify-between items-center mx-20 lg:mt-10">
             <div className="flex flex-col justify-center text-center">
-              <h1 className="text-my_light">Total Txns</h1>
+              <h1 className="text-my_light">Total Credits</h1>
               <h1 className="text-my_light font-semibold text-xl">
                 {TotalTxns}
               </h1>
             </div>
             <div className="flex flex-col justify-center text-center">
-              <h1 className="text-my_light">Used Txns</h1>
+              <h1 className="text-my_light">Used Credits</h1>
               <h1 className="text-my_light font-semibold text-xl">
                 {UsedTxns}
               </h1>
@@ -39,9 +39,7 @@ function Section2({ WeeklyAnalysis }) {
           </div>
           <div className="flex flex-col justify-center text-center mt-5">
             <h1 className="text-my_light">Plan Expire</h1>
-            <h1 className="text-my_light font-semibold text-xl">
-              No Active Plan
-            </h1>
+            <h1 className="text-my_light font-semibold text-xl">Never</h1>
           </div>
         </div>
       </div>

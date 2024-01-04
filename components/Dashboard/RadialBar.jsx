@@ -8,7 +8,7 @@ function RadialBar({ UsedTxns }) {
       type: "radialBar",
     },
     series: [50],
-    labels: ["Transactions Used"],
+    labels: ["Credits Used"],
     colors: ["#2F855A"],
     stroke: {
       lineCap: "round",

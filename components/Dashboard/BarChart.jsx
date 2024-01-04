@@ -28,7 +28,7 @@ function BarChart({ WeeklyAnalysis }) {
 
   const series = [
     {
-      name: "Recieved Amount",
+      name: "OTP Sent",
       // data: [1, 2, 3, 4, 5, 6, 7],
       data: WeeklyAnalysis.map((item) => item.otpSent),
     },
