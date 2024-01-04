@@ -3,6 +3,7 @@ import Card from "./Card";
 import PostmanLogo from "@/public/Postman.png";
 import { EyeIcon, InboxArrowDownIcon } from "@heroicons/react/24/outline";
 import ReactNativeLogo from "@/public/reactNativeLogo.png";
+import NodeJSLogo from "@/public/NodejsLogo.jpg";
 function Section2() {
   return (
     <div className="flex flex-col lg:flex-row lg:space-x-2 lg:space-y-0 space-y-2 mb-10 mt-4 w-full justify-evenly">
@@ -30,7 +31,7 @@ function Section2() {
       </div>
       <div className="flex-1">
         <Card
-          image={PostmanLogo}
+          image={NodeJSLogo}
           heading={"NodeJS Sample Code"}
           Icon={InboxArrowDownIcon}
           linktext={"Downoad Code"}
