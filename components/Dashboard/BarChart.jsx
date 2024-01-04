@@ -16,7 +16,7 @@ function BarChart({ WeeklyAnalysis }) {
       //   "Saturday",
       //   "Sunday",
       // ],
-      categories: WeeklyAnalysis.map((item) => item.day),
+      categories: WeeklyAnalysis?.map((item) => item.day),
     },
 
     yaxis: {
@@ -30,7 +30,7 @@ function BarChart({ WeeklyAnalysis }) {
     {
       name: "OTP Sent",
       // data: [1, 2, 3, 4, 5, 6, 7],
-      data: WeeklyAnalysis.map((item) => item.otpSent),
+      data: WeeklyAnalysis?.map((item) => item.otpSent),
     },
   ];
   return (

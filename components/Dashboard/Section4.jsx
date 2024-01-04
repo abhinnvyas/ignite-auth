@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Section4({ RecentActivity }) {
@@ -6,9 +7,12 @@ function Section4({ RecentActivity }) {
       <div className="flex flex-col border-2 rounded-lg  justify-left p-2 bg-white">
         <div className="p-2 flex justify-between">
           <h1 className="text-md font-semibold mb-2">Recent Activity</h1>
-          <h1 className="hover:underline cursor-pointer transition-all ease-in-out">
-            See all transactions
-          </h1>
+          <Link
+            className="hover:underline cursor-pointer transition-all ease-in-out"
+            href="/user/transaction"
+          >
+            View all transactions
+          </Link>
         </div>
         <div></div>
         <div className=" px-0 overflow-auto w-full">
@@ -48,7 +52,7 @@ function Section4({ RecentActivity }) {
               </tr>
             </thead>
             <tbody>
-              {RecentActivity.map((item, index) => (
+              {RecentActivity?.map((item, index) => (
                 <tr className="" key={index}>
                   <td className="p-4 border-b border-blue-gray-50">
                     <div className="flex items-center gap-3">
