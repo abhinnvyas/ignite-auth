@@ -13,6 +13,9 @@ export default function Home() {
     <div>
       <Navbar />
       <div className="m-5">
+        <title>
+          Ignite Auth: Next-Level Authentication for Your Applications | WhatsApp OTP Verifications |
+        </title>
         <Section1 />
         <Section2 />
         <Section3 />

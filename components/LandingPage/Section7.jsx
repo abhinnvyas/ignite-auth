@@ -103,6 +103,11 @@ function Section7() {
               Privacy Policy
             </p>
           </Link>
+          <Link href="/TermsAndConditions">
+            <p className="hover:underline transition-all ease-in-out">
+              Terms & Conditions
+            </p>
+          </Link>
         </div>
       </div>
     </footer>

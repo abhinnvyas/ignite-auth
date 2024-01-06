@@ -11,7 +11,11 @@ import animationData from "@/public/Animation2.json";
 function Page() {
   return (
     <div className="min-h-screen ">
-      {/* <Navbar /> */}
+      <title>
+        Sign In - Ignite Auth : Secure Authentication, Seamless Sign-In
+      </title>
+      
+     
       <div className="flex items-center justify-between px-5 h-18 border-b-2 p-2">
         <div className="flex items-center space-x-1 px-2">
           <Link href="/">

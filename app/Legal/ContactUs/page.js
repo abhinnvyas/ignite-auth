@@ -4,6 +4,9 @@ import Head from 'next/head';
 export default function page() {
     return (
         <>
+            <title>
+                Contact Us | Ignite Auth
+            </title>
 
             <div style={{
                 height: "100vh",

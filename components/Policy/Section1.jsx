@@ -3,6 +3,9 @@ import React from "react";
 function Section1() {
   return (
     <div className="max-w-5xl mx-auto">
+      <title>
+        Privacy Policy | Ignite Auth
+      </title>
       <div className="leading-relaxed">
         <div className="text-center mx-auto ">
           <h1 className="text-3xl font-bold">Privacy Policy</h1>
@@ -21,19 +24,19 @@ function Section1() {
           <section className="mb-8">
             <p className="mb-4">
               Your privacy is important to us, and we do take it seriously.
-              DOUBLE SLASH INTERNET PRIVATE LIMITED has created the following
+              Ignition Nest Labs has created the following
               Privacy Policy to let you know what information we collect when
               you visit our Site, why we collect it, and how it is used. This
               Privacy Policy explains the data collection and use practices of
-              our website, www.upigateway.com (“Site”); it does NOT apply to
-              other online or offline DOUBLE SLASH INTERNET PRIVATE LIMITED
+              our website, www.igniteauth.in (“Site”); it does NOT apply to
+              other online or offline Ignition Nest Labs
               sites, products, or services.
             </p>
             <p className="mb-4">
               The terms “you,” “your,” and “yours” refer to the Customer/User,
               Individual or Individual representing an Organization, using our
-              Site. The terms “upigateway”, “UPIGateway”, “UPI-Gateway”, ”we”,
-              ”us” and “Company” refer to DOUBLE SLASH INTERNET PRIVATE LIMITED
+              Site. The terms “igniteauth”, IgniteAuth, "Ignite-Auth, ”we”,
+              ”us” and “Company” refer to Ignition Nest Labs
               and its subsidiaries and affiliates. This Privacy Policy is
               governed by our Terms and Conditions. By using this site, you
               consent to the data practices prescribed in this statement.
@@ -41,8 +44,8 @@ function Section1() {
             <p className="mb-4">
               We may periodically make changes to this Privacy Policy and the
               updated version will be made available to you on this page{" "}
-              <a href="www.upigateway.com/policy" className="text-blue-500">
-                www.upigateway.com/policy
+              <a target="_blank" href="https://www.igniteauth.in/policy" className="text-blue-500">
+                www.igniteauth.in/policy
               </a>
               . It is your responsibility to review this Privacy Policy
               frequently and remain informed about any changes to it, so we
@@ -98,7 +101,7 @@ function Section1() {
               anyone. We may share your Personal Information only with your
               consent to our customers in respect of whom you have chosen, or in
               respect of whom you have acted upon, to use the Services of
-              UPIGateway or to business partners and affiliates as described
+              igniteauth or to business partners and affiliates as described
               below:
             </p>
             <p className="mb-4">
@@ -256,8 +259,8 @@ function Section1() {
             <p>
               If you would like to cancel your subscription and/or unsubscribe
               from our email list, email us at{" "}
-              <a href="mailto:support@upigateway.com" className="text-blue-500">
-                support@upigateway.com
+              <a href="mailto:support@igniteauth.com" className="text-blue-500">
+                support@igniteauth.com
               </a>{" "}
               and we will assist you.
             </p>
@@ -269,8 +272,8 @@ function Section1() {
             <p>
               If you believe that the Company has not adhered to this Privacy
               Policy, please contact us by email at{" "}
-              <a href="mailto:support@upigateway.com" className="text-blue-500">
-                support@upigateway.com
+              <a href="mailto:support@igniteauth.com" className="text-blue-500">
+                support@igniteauth.com
               </a>{" "}
               and we will use commercially reasonable efforts to remedy the
               problem.
